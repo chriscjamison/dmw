@@ -1,0 +1,298 @@
+/* main.scss - Contains all styling for dallasmobilewash.com */
+
+/****** COLORS ******/
+
+$white_1: #fff;
+$white_2: #f4f5f0;
+
+$gray_1: #98a0a5;
+
+$black_1: #2b2c30;
+$black_2: #000;
+
+$dark_blue_1: #384883;
+$dark_blue_2: #2f3e55;
+$dark_blue_3: #2b2c30;
+
+$green_1: #A5BCBB;
+$green_2: #579794;
+
+$green_translucent_1: rgba(87, 151, 148, 0.85);
+
+
+/****** FONTS ******/
+
+$adelle_sans: adelle-sans, sans-serif;
+
+$font_weight_normal: 400;
+$font_weight_bold: 700;
+
+$font_size_sm_1: 1.1rem; // 13pt
+
+$font_size_med_1: 1.33rem; // 16pt
+$font_size_med_2: 1.66rem; // 20pt
+
+$font_size_lg_1: 2.08rem; // 25pt
+$font_size_lg_2: 3.25rem; // 39pt
+
+
+/****** SPACERS ******/
+
+$spacer_sm_1: 8px;
+$spacer_sm_2: 10px;
+$spacer_sm_3: 13px;
+$spacer_sm_4: 16px;
+
+$spacer_med_1: 26px;
+$spacer_med_2: 36px;
+
+$spacer_lg_1: 76px;
+$spacer_lg_2: 144px;
+
+
+
+/****** TYPOGRAPHY STYLING ******/  
+
+.nav-top-a, 
+.contact_info-heading-span, 
+.contact_info-content-span, 
+.contact_info-content-a, 
+.action-a, 
+h1, 
+p {
+  font-family: $adelle_sans;
+}
+
+.contact_info-heading-span, 
+.contact_info-content-span, 
+.contact_info-content-a, 
+.action-a {
+  font-size: $font_size_sm_1;
+}
+
+.nav-top-a {
+  font-size: $font_size_med_1;
+}
+
+.carousel-cta p {
+  font-size: $font_size_med_2;
+}
+
+.carousel-cta h1 {
+  font-size: $font_size_lg_2;
+}
+
+.contact_info-content-span, 
+.contact_info-content-a, 
+.nav-top-a, 
+.carousel-cta p {
+  font-weight: $font_weight_normal;
+}
+
+.action-a {
+  font-weight: 600;
+}
+
+.contact_info-heading-span, 
+.carousel-cta h1 {
+  font-weight: $font_weight_bold;
+}
+
+.contact_info-content-a {
+  letter-spacing: -0.6px;
+}
+
+.nav-top-a {
+  letter-spacing: 0.4px;
+}
+
+.contact_info-content-a {
+  text-decoration: underline;
+}
+
+.nav-top-a, 
+.action-a, 
+.carousel-cta h1, 
+.carousel-cta p {
+  color: $white_2;
+}
+
+.contact_info-listing-div {
+  color: $dark_blue_2;
+}
+
+.contact_info-content-a {
+  color: $dark_blue_1;
+}
+
+
+/****** COLOR STYLING ******/
+
+.nav-top-a {
+  background-color: $green_translucent_1;
+}
+
+#header-contact_info_container-aside {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(87,151,148,1) 100%)
+}
+
+.action-a {
+  background-color: $dark_blue_1;
+}
+
+
+
+/****** BORDERS ******/
+
+.nav-top-a, 
+#header-contact_info_container-aside, 
+.action-a {
+  border-radius: 10px;
+}
+
+.action-a {
+  border: 2px solid $white_2;
+}
+
+
+
+/****** SHADOWS ******/
+
+$shadow_distance: 6px;
+
+#header-contact_info_container-aside, 
+.action-a {
+  box-shadow: 0 0 $shadow_distance $dark_blue_3;
+}
+
+
+
+/******* COMMON ELEMENTS ****** */
+
+:root {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.action-a {
+  width: 223px;
+  display: block;
+  padding: $spacer_sm_4;
+  text-align: center;
+}
+
+/******* HEADER ******/
+
+header {
+  position: absolute;
+  top: $spacer_lg_1;
+  left: $spacer_lg_1;
+  z-index: 3;
+
+  #header-contact_info_container-aside  {
+    width: inherit;
+    margin: $spacer_sm_1 0 0 $spacer_lg_1;
+    padding: $spacer_sm_2 $spacer_sm_4;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+
+    .contact_info-listing-div {
+      margin-bottom: $spacer_sm_2;
+    }
+
+    .contact_info-action-div {
+      margin: $spacer_sm_2 0;
+    }
+
+    .contact_info-heading-span, 
+    .contact_info-content-span, 
+    .contact_info-content-a {
+      display: block;
+    }
+  }  
+}
+
+
+
+/****** NAVIGATION ******/
+
+#top-desktop-nav,  
+#top-nav-logo-a, 
+#top-nav-ul {
+  display: inline-flex;
+}
+
+#top-nav-logo-a {
+  margin-right: $spacer_med_2;
+}
+
+#top-nav-ul {
+  margin: $spacer_sm_1 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  vertical-align: top;
+
+  li {
+    margin-right: $spacer_sm_4;
+  }
+
+  .nav-top-a {
+    padding: $spacer_sm_1 $spacer_sm_4 $spacer_sm_2 $spacer_sm_4;
+    display: block;
+  }
+}
+
+
+
+/****** CAROUSEL ******/
+
+.carousel {
+  z-index: 2;
+}
+
+.carousel-item  {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-cta {
+    position: absolute;
+    left: $spacer_lg_1;
+    bottom: $spacer_lg_1;
+  }
+
+  .carousel-cta {
+    p {
+      margin: $spacer_sm_1 0 $spacer_sm_4 0;
+    }
+  }
+
+  #cta-homepage {
+    p {
+      width: 262px;
+    }
+  }
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+  width: $spacer_lg_1;
+}
+
+
+
+/****** COPY ******/
+
+.container {
+  margin-top: $spacer_med_2;
+  display: flex;
+}
+
+
+
+/****** FOOTER ******/
+

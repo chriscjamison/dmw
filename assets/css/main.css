@@ -1,0 +1,170 @@
+/* main.scss - Contains all styling for dallasmobilewash.com */
+/****** COLORS ******/
+/****** FONTS ******/
+/****** SPACERS ******/
+/****** TYPOGRAPHY STYLING ******/
+.nav-top-a,
+.contact_info-heading-span,
+.contact_info-content-span,
+.contact_info-content-a,
+.action-a,
+h1,
+p {
+  font-family: adelle-sans, sans-serif; }
+
+.contact_info-heading-span,
+.contact_info-content-span,
+.contact_info-content-a,
+.action-a {
+  font-size: 1.1rem; }
+
+.nav-top-a {
+  font-size: 1.33rem; }
+
+.carousel-cta p {
+  font-size: 1.66rem; }
+
+.carousel-cta h1 {
+  font-size: 3.25rem; }
+
+.contact_info-content-span,
+.contact_info-content-a,
+.nav-top-a,
+.carousel-cta p {
+  font-weight: 400; }
+
+.action-a {
+  font-weight: 600; }
+
+.contact_info-heading-span,
+.carousel-cta h1 {
+  font-weight: 700; }
+
+.contact_info-content-a {
+  letter-spacing: -0.6px; }
+
+.nav-top-a {
+  letter-spacing: 0.4px; }
+
+.contact_info-content-a {
+  text-decoration: underline; }
+
+.nav-top-a,
+.action-a,
+.carousel-cta h1,
+.carousel-cta p {
+  color: #f4f5f0; }
+
+.contact_info-listing-div {
+  color: #2f3e55; }
+
+.contact_info-content-a {
+  color: #384883; }
+
+/****** COLOR STYLING ******/
+.nav-top-a {
+  background-color: rgba(87, 151, 148, 0.85); }
+
+#header-contact_info_container-aside {
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, #579794 100%); }
+
+.action-a {
+  background-color: #384883; }
+
+/****** BORDERS ******/
+.nav-top-a,
+#header-contact_info_container-aside,
+.action-a {
+  border-radius: 10px; }
+
+.action-a {
+  border: 2px solid #f4f5f0; }
+
+/****** SHADOWS ******/
+#header-contact_info_container-aside,
+.action-a {
+  box-shadow: 0 0 6px #2b2c30; }
+
+/******* COMMON ELEMENTS ****** */
+:root {
+  margin: 0;
+  padding: 0;
+  z-index: 0; }
+
+.action-a {
+  width: 223px;
+  display: block;
+  padding: 16px;
+  text-align: center; }
+
+/******* HEADER ******/
+header {
+  position: absolute;
+  top: 76px;
+  left: 76px;
+  z-index: 3; }
+  header #header-contact_info_container-aside {
+    width: inherit;
+    margin: 8px 0 0 76px;
+    padding: 10px 16px;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top; }
+    header #header-contact_info_container-aside .contact_info-listing-div {
+      margin-bottom: 10px; }
+    header #header-contact_info_container-aside .contact_info-action-div {
+      margin: 10px 0; }
+    header #header-contact_info_container-aside .contact_info-heading-span,
+    header #header-contact_info_container-aside .contact_info-content-span,
+    header #header-contact_info_container-aside .contact_info-content-a {
+      display: block; }
+
+/****** NAVIGATION ******/
+#top-desktop-nav,
+#top-nav-logo-a,
+#top-nav-ul {
+  display: inline-flex; }
+
+#top-nav-logo-a {
+  margin-right: 36px; }
+
+#top-nav-ul {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  vertical-align: top; }
+  #top-nav-ul li {
+    margin-right: 16px; }
+  #top-nav-ul .nav-top-a {
+    padding: 8px 16px 10px 16px;
+    display: block; }
+
+/****** CAROUSEL ******/
+.carousel {
+  z-index: 2; }
+
+.carousel-item img {
+  width: 100%;
+  height: auto; }
+.carousel-item .carousel-cta {
+  position: absolute;
+  left: 76px;
+  bottom: 76px; }
+.carousel-item .carousel-cta p {
+  margin: 8px 0 16px 0; }
+.carousel-item #cta-homepage p {
+  width: 262px; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 76px; }
+
+/****** COPY ******/
+.container {
+  margin-top: 36px;
+  display: flex; }
+
+/****** FOOTER ******/
+
+/*# sourceMappingURL=main.css.map */
