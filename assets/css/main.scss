@@ -62,23 +62,29 @@ $spacer_144px: 144px;
 .contact_info-content-a, 
 .action-a, 
 h1, 
-p {
+p, 
+h2, 
+ul li, 
+#level_5-services-container a {
   font-family: $adelle_sans;
 }
 
 .contact_info-heading-span, 
 .contact_info-content-span, 
 .contact_info-content-a, 
-.action-a, 
-.content-p {
+.action-a {
   font-size: $font_size_sm_1;
 }
 
-.nav-top-a {
+.nav-top-a, 
+.content-p, 
+ul li, 
+#level_5-services-container a {
   font-size: $font_size_med_1;
 }
 
-.carousel-cta p {
+.carousel-cta p, 
+h2 {
   font-size: $font_size_med_2;
 }
 
@@ -95,6 +101,10 @@ p {
 
 .action-a {
   font-weight: 600;
+}
+
+h2 {
+  font-weight: 800;
 }
 
 .contact_info-heading-span, 
@@ -126,7 +136,8 @@ p {
   color: $white_2;
 }
 
-.contact_info-listing-div {
+.contact_info-listing-div, 
+#level_3-content-container {
   color: $dark_blue_2;
 }
 
@@ -136,6 +147,14 @@ p {
 
 #level_1-p {
   color: $gray_1;
+}
+
+#level_4-content-container h2, 
+#level_4-service_area_list, 
+#level_5-content-background, 
+#level_5-services-container, 
+#level_5-services-container a {
+  color: $dark_blue_3;
 }
 
 
@@ -167,18 +186,48 @@ p {
   background-color: $black_1;
 }
 
+#homepage-section-3 {
+  background: rgb(165,188,187);
+  background: linear-gradient(135deg, rgba(165,188,187,1) 40%, rgba(47,62,85,1) 83%);
+}
+
+#level_3-content-container {
+  background-color: $white_1;
+}
+
+#homepage-section-5 {
+  background-color: $white_1;
+}
+
+#level_5-content-background, 
+#level_5-services-container {
+  background-color: $white_2;
+}
+
 
 /****** BORDERS ******/
 
 .nav-top-a, 
 #header-contact_info_container-aside, 
 .action-a, 
-.content-p {
+.content-p, 
+#level_3-content-container, 
+#level_4-map, 
+#level_5-content-background, 
+#level_5-services-container {
   border-radius: 10px;
 }
 
 .action-a {
   border: 2px solid $white_2;
+}
+
+#level_5-services-container li {
+  border-bottom: 2px solid $gray_1;
+}
+
+#level_5-services-container li:last-of-type {
+  border-bottom: none;
 }
 
 
@@ -188,7 +237,10 @@ p {
 $shadow_distance: 6px;
 
 #header-contact_info_container-aside, 
-.action-a {
+.action-a, 
+#level_4-map, 
+#level_5-content-background,
+#level_5-services-container {
   box-shadow: 0 0 $shadow_distance $dark_blue_3;
 }
 
@@ -342,7 +394,7 @@ header {
   width: 27%;
   padding: $spacer_11px $spacer_16px;
   position: relative;
-  top: 52%;
+  top: 43%;
   left: 59.3%;  
 }
 
@@ -422,6 +474,128 @@ header {
 #level_2-service-home_exterior_cleaning {
   background-image: url('/assets/img/homepage/level_2-exterior.jpg');
 }
+
+
+/* --- LEVEL #3 --- */
+
+
+#level_3-content-container {
+  width: 27%;
+  position: relative;
+  top: 15%;
+  left: 59.3%;
+  opacity: 0.8;
+  z-index: 300;
+
+  .content-p {
+    padding: $spacer_11px $spacer_16px;
+  }
+}
+
+#level_3-img {
+  width: 53%;
+  display: block;
+  position: relative;
+  bottom: 35%;
+  left: 144px;
+  z-index: 100;
+}
+
+
+/* --- LEVEL #4 --- */
+
+#homepage-section-4 {
+  background-image: url('/assets/img/homepage/level_4.jpg');
+  display: flex;
+}
+
+#level_4-content-container, 
+#level_4-map {
+  position: relative;
+}
+
+#level_4-content-container {
+  width: 50%;
+  height: 85%;
+  top: 15%;
+
+  h2 {
+    width: 193px;
+    margin: 0 auto $spacer_10px auto;
+  }
+  
+  ul {
+    width: 196px;
+    margin: 0 auto; 
+
+    li {
+      margin-bottom: $spacer_10px;
+    }
+  }
+}
+
+#level_4-map {
+  width: 577px;
+  height: 433px;
+  top: 15%;
+  left: 9.1%;
+}
+
+
+/* --- LEVEL #5 --- */
+
+#homepage-section-5 {
+  display: inline-flex;
+  background-image: url('/assets/img/homepage/level_5.png');
+  background-position: 0 50%;
+  background-size: 40%;
+  background-repeat: repeat-x;
+}
+
+#level_5-content-container {
+  width: 50%;  
+}
+
+#level_5-content-background {
+  width: 54%;
+  height: 59%;
+  margin: 0 auto;
+  position: relative;
+  top: 15%;
+
+  .content-p {
+    padding: $spacer_11px $spacer_16px;
+  }
+}
+
+#level_5-services-container {
+  width: 27%;
+  height: 34%;
+  padding: $spacer_11px $spacer_16px;
+  position: relative;
+  top: 15%;
+  left: 9.1%;
+
+  li {
+    list-style-image: url('/assets/img/common/dots/services.png');
+    margin-bottom: $spacer_10px;
+
+    a {
+      position: relative;
+      top: -8px;
+    }
+  }
+}
+
+#level_5-services-list {
+  width: 96%;
+}
+
+
+
+
+
+
 
 
 /****** FOOTER ******/

@@ -9,23 +9,29 @@
 .contact_info-content-a,
 .action-a,
 h1,
-p {
+p,
+h2,
+ul li,
+#level_5-services-container a {
   font-family: adelle-sans, sans-serif;
 }
 
 .contact_info-heading-span,
 .contact_info-content-span,
 .contact_info-content-a,
-.action-a,
-.content-p {
+.action-a {
   font-size: 1.1rem;
 }
 
-.nav-top-a {
+.nav-top-a,
+.content-p,
+ul li,
+#level_5-services-container a {
   font-size: 1.33rem;
 }
 
-.carousel-cta p {
+.carousel-cta p,
+h2 {
   font-size: 1.66rem;
 }
 
@@ -42,6 +48,10 @@ p {
 
 .action-a {
   font-weight: 600;
+}
+
+h2 {
+  font-weight: 800;
 }
 
 .contact_info-heading-span,
@@ -73,7 +83,8 @@ p {
   color: #f4f5f0;
 }
 
-.contact_info-listing-div {
+.contact_info-listing-div,
+#level_3-content-container {
   color: #2f3e55;
 }
 
@@ -83,6 +94,14 @@ p {
 
 #level_1-p {
   color: #98a0a5;
+}
+
+#level_4-content-container h2,
+#level_4-service_area_list,
+#level_5-content-background,
+#level_5-services-container,
+#level_5-services-container a {
+  color: #2b2c30;
 }
 
 /****** COLOR STYLING ******/
@@ -112,11 +131,33 @@ p {
   background-color: #2b2c30;
 }
 
+#homepage-section-3 {
+  background: #a5bcbb;
+  background: linear-gradient(135deg, #a5bcbb 40%, #2f3e55 83%);
+}
+
+#level_3-content-container {
+  background-color: #fff;
+}
+
+#homepage-section-5 {
+  background-color: #fff;
+}
+
+#level_5-content-background,
+#level_5-services-container {
+  background-color: #f4f5f0;
+}
+
 /****** BORDERS ******/
 .nav-top-a,
 #header-contact_info_container-aside,
 .action-a,
-.content-p {
+.content-p,
+#level_3-content-container,
+#level_4-map,
+#level_5-content-background,
+#level_5-services-container {
   border-radius: 10px;
 }
 
@@ -124,9 +165,20 @@ p {
   border: 2px solid #f4f5f0;
 }
 
+#level_5-services-container li {
+  border-bottom: 2px solid #98a0a5;
+}
+
+#level_5-services-container li:last-of-type {
+  border-bottom: none;
+}
+
 /****** SHADOWS ******/
 #header-contact_info_container-aside,
-.action-a {
+.action-a,
+#level_4-map,
+#level_5-content-background,
+#level_5-services-container {
   box-shadow: 0 0 6px #2b2c30;
 }
 
@@ -247,7 +299,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
   width: 27%;
   padding: 11px 16px;
   position: relative;
-  top: 52%;
+  top: 43%;
   left: 59.3%;
 }
 
@@ -322,6 +374,108 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 #level_2-service-home_exterior_cleaning {
   background-image: url("/assets/img/homepage/level_2-exterior.jpg");
+}
+
+/* --- LEVEL #3 --- */
+#level_3-content-container {
+  width: 27%;
+  position: relative;
+  top: 15%;
+  left: 59.3%;
+  opacity: 0.8;
+  z-index: 300;
+}
+#level_3-content-container .content-p {
+  padding: 11px 16px;
+}
+
+#level_3-img {
+  width: 53%;
+  display: block;
+  position: relative;
+  bottom: 35%;
+  left: 144px;
+  z-index: 100;
+}
+
+/* --- LEVEL #4 --- */
+#homepage-section-4 {
+  background-image: url("/assets/img/homepage/level_4.jpg");
+  display: flex;
+}
+
+#level_4-content-container,
+#level_4-map {
+  position: relative;
+}
+
+#level_4-content-container {
+  width: 50%;
+  height: 85%;
+  top: 15%;
+}
+#level_4-content-container h2 {
+  width: 193px;
+  margin: 0 auto 10px auto;
+}
+#level_4-content-container ul {
+  width: 196px;
+  margin: 0 auto;
+}
+#level_4-content-container ul li {
+  margin-bottom: 10px;
+}
+
+#level_4-map {
+  width: 577px;
+  height: 433px;
+  top: 15%;
+  left: 9.1%;
+}
+
+/* --- LEVEL #5 --- */
+#homepage-section-5 {
+  display: inline-flex;
+  background-image: url("/assets/img/homepage/level_5.png");
+  background-position: 0 50%;
+  background-size: 40%;
+  background-repeat: repeat-x;
+}
+
+#level_5-content-container {
+  width: 50%;
+}
+
+#level_5-content-background {
+  width: 54%;
+  height: 59%;
+  margin: 0 auto;
+  position: relative;
+  top: 15%;
+}
+#level_5-content-background .content-p {
+  padding: 11px 16px;
+}
+
+#level_5-services-container {
+  width: 27%;
+  height: 34%;
+  padding: 11px 16px;
+  position: relative;
+  top: 15%;
+  left: 9.1%;
+}
+#level_5-services-container li {
+  list-style-image: url("/assets/img/common/dots/services.png");
+  margin-bottom: 10px;
+}
+#level_5-services-container li a {
+  position: relative;
+  top: -8px;
+}
+
+#level_5-services-list {
+  width: 96%;
 }
 
 /****** FOOTER ******/
