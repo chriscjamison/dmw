@@ -65,14 +65,18 @@ h1,
 p, 
 h2, 
 ul li, 
-#level_5-services-container a {
+#level_5-services-container a, 
+#footer-copyright, 
+.footer-links-a {
   font-family: $adelle_sans;
 }
 
 .contact_info-heading-span, 
 .contact_info-content-span, 
 .contact_info-content-a, 
-.action-a {
+.action-a, 
+#footer-copyright, 
+.footer-links-a {
   font-size: $font_size_sm_1;
 }
 
@@ -120,7 +124,8 @@ h2 {
   letter-spacing: 0.4px;
 }
 
-.contact_info-content-a {
+.contact_info-content-a, 
+.footer-links-a {
   text-decoration: underline;
 }
 
@@ -136,6 +141,15 @@ h2 {
   color: $white_2;
 }
 
+#level_1-p, 
+#footer-copyright {
+  color: $gray_1;
+}
+
+.footer-links-a {
+  color: $green_1;
+}
+
 .contact_info-listing-div, 
 #level_3-content-container {
   color: $dark_blue_2;
@@ -145,9 +159,6 @@ h2 {
   color: $dark_blue_1;
 }
 
-#level_1-p {
-  color: $gray_1;
-}
 
 #level_4-content-container h2, 
 #level_4-service_area_list, 
@@ -195,7 +206,8 @@ h2 {
   background-color: $white_1;
 }
 
-#homepage-section-5 {
+#homepage-section-5, 
+#level_6-content-background {
   background-color: $white_1;
 }
 
@@ -204,6 +216,14 @@ h2 {
   background-color: $white_2;
 }
 
+#homepage-section-6 {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(165,188,187,1) 15%, rgba(165,188,187,1) 68%, rgba(159,156,153,1) 68%, rgba(244,245,240,1) 100%);
+}
+
+footer {
+  background-color: $black_1;
+}
 
 /****** BORDERS ******/
 
@@ -214,7 +234,8 @@ h2 {
 #level_3-content-container, 
 #level_4-map, 
 #level_5-content-background, 
-#level_5-services-container {
+#level_5-services-container, 
+#level_6-content-background {
   border-radius: 10px;
 }
 
@@ -240,12 +261,73 @@ $shadow_distance: 6px;
 .action-a, 
 #level_4-map, 
 #level_5-content-background,
-#level_5-services-container {
+#level_5-services-container, 
+#level_6-content-background {
   box-shadow: 0 0 $shadow_distance $dark_blue_3;
 }
 
 #cta-homepage {
   text-shadow: -1px 1px 2px $dark_blue_2, 1px 1px 2px $dark_blue_2, 1px -1px 0 $dark_blue_2, -1px -1px 0 $dark_blue_2;
+}
+
+
+
+/****** LINK/BUTTON BEHAVIOR ******/
+
+.nav-top-a {
+  transition-property: color, backgroundColor, fontWeight;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.nav-top-a:hover {
+  background-color: $white_2;
+  font-weight: 400;
+  color: $green_2;
+}
+
+.nav-top-a:active {
+  background-color: $white_2;
+  font-weight: 800;
+  color: $green_2;
+}
+
+.action-a {
+  transition-property: color, backgroundColor, border, textDecoration, fontWeight;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.action-a:hover {
+  background-color: $green_2;
+  border: 4px solid $white_2;
+  font-weight: 800;
+  color: $white_2;
+  text-decoration: none;
+}
+
+.action-a:active {
+  background-color: $white_2;
+  border: 2px solid $dark_blue_1;
+  font-weight: 800;
+  color: $dark_blue_1;
+  text-decoration: none;
+}
+
+.footer-links-a {
+  transition-property: color, fontWeight;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.footer-links-a:hover {
+  font-weight: 400;
+  color: $white_2;
+}
+
+.footer-links-a:active {
+  font-weight: 800;
+  color: $white_2;
 }
 
 
@@ -264,6 +346,12 @@ $shadow_distance: 6px;
   padding: $spacer_16px;
   text-align: center;
 }
+
+#action-talkToDallas {
+  margin: $spacer_16px 0;
+}
+
+
 
 /******* HEADER ******/
 
@@ -356,7 +444,7 @@ header {
 
   #cta-homepage {
     p {
-      width: 643px;
+      width: 521px;
     }
   }
 }
@@ -592,14 +680,95 @@ header {
 }
 
 
+/* --- LEVEL #6 --- */
 
+#homepage-section-6 {
+  display: inline-flex;
+}
 
+#level_6-img-container {
+  width: 47.6%;
+}
+
+#level_6-img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 46%;
+}
+
+#level_6-content-background {
+  width: 54%;
+  height: auto;
+  margin: 0 auto;
+  padding: $spacer_11px $spacer_16px;
+  position: relative;
+  top: 15%;
+}
 
 
 
 
 /****** FOOTER ******/
 
+footer {
+  width: 100%;
+  display: inline-flex;
+}
+
+#footer-info-container {
+  padding: $spacer_26px 0;
+  position: relative;
+  left: 76px;
+}
+
+#footer-logo {
+  width: 295px;
+  height: auto;
+}
+
+#footer-socialMedia-container {
+  margin: $spacer_16px;
+}
+
+#footer-socialMedia-facebook {
+  margin: 0 auto;
+  display: block;
+}
+
+#footer-copyright-container {
+  text-align: center;
+}
+
+#footer-links-container {
+  padding: $spacer_26px 0;
+  position: relative;
+  left: 44.5%;
+}
+
+#footer-links {
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    margin-bottom: $spacer_11px;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+#footer-action-container {
+  height: calc(100% - 56px);
+  position: relative;
+  top: 56px;
+  left: calc(100% - 295px - 208px - 223px - 76px); 
+}
+// Value is found by subtracting the width of the <div> containing the business info from the width 
+// of the <div> containing the footer's links from the width of the <div> containing the button 
+// and the value of the margin of the page (76px) from the width of the browser.
 
 
 

@@ -12,14 +12,18 @@ h1,
 p,
 h2,
 ul li,
-#level_5-services-container a {
+#level_5-services-container a,
+#footer-copyright,
+.footer-links-a {
   font-family: adelle-sans, sans-serif;
 }
 
 .contact_info-heading-span,
 .contact_info-content-span,
 .contact_info-content-a,
-.action-a {
+.action-a,
+#footer-copyright,
+.footer-links-a {
   font-size: 1.1rem;
 }
 
@@ -67,7 +71,8 @@ h2 {
   letter-spacing: 0.4px;
 }
 
-.contact_info-content-a {
+.contact_info-content-a,
+.footer-links-a {
   text-decoration: underline;
 }
 
@@ -83,6 +88,15 @@ h2 {
   color: #f4f5f0;
 }
 
+#level_1-p,
+#footer-copyright {
+  color: #98a0a5;
+}
+
+.footer-links-a {
+  color: #a5bcbb;
+}
+
 .contact_info-listing-div,
 #level_3-content-container {
   color: #2f3e55;
@@ -90,10 +104,6 @@ h2 {
 
 .contact_info-content-a {
   color: #384883;
-}
-
-#level_1-p {
-  color: #98a0a5;
 }
 
 #level_4-content-container h2,
@@ -140,13 +150,23 @@ h2 {
   background-color: #fff;
 }
 
-#homepage-section-5 {
+#homepage-section-5,
+#level_6-content-background {
   background-color: #fff;
 }
 
 #level_5-content-background,
 #level_5-services-container {
   background-color: #f4f5f0;
+}
+
+#homepage-section-6 {
+  background: white;
+  background: linear-gradient(180deg, white 0%, #a5bcbb 15%, #a5bcbb 68%, #9f9c99 68%, #f4f5f0 100%);
+}
+
+footer {
+  background-color: #2b2c30;
 }
 
 /****** BORDERS ******/
@@ -157,7 +177,8 @@ h2 {
 #level_3-content-container,
 #level_4-map,
 #level_5-content-background,
-#level_5-services-container {
+#level_5-services-container,
+#level_6-content-background {
   border-radius: 10px;
 }
 
@@ -178,12 +199,70 @@ h2 {
 .action-a,
 #level_4-map,
 #level_5-content-background,
-#level_5-services-container {
+#level_5-services-container,
+#level_6-content-background {
   box-shadow: 0 0 6px #2b2c30;
 }
 
 #cta-homepage {
   text-shadow: -1px 1px 2px #2f3e55, 1px 1px 2px #2f3e55, 1px -1px 0 #2f3e55, -1px -1px 0 #2f3e55;
+}
+
+/****** LINK/BUTTON BEHAVIOR ******/
+.nav-top-a {
+  transition-property: color, backgroundColor, fontWeight;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.nav-top-a:hover {
+  background-color: #f4f5f0;
+  font-weight: 400;
+  color: #579794;
+}
+
+.nav-top-a:active {
+  background-color: #f4f5f0;
+  font-weight: 800;
+  color: #579794;
+}
+
+.action-a {
+  transition-property: color, backgroundColor, border, textDecoration, fontWeight;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.action-a:hover {
+  background-color: #579794;
+  border: 4px solid #f4f5f0;
+  font-weight: 800;
+  color: #f4f5f0;
+  text-decoration: none;
+}
+
+.action-a:active {
+  background-color: #f4f5f0;
+  border: 2px solid #384883;
+  font-weight: 800;
+  color: #384883;
+  text-decoration: none;
+}
+
+.footer-links-a {
+  transition-property: color, fontWeight;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.footer-links-a:hover {
+  font-weight: 400;
+  color: #f4f5f0;
+}
+
+.footer-links-a:active {
+  font-weight: 800;
+  color: #f4f5f0;
 }
 
 /******* COMMON ELEMENTS ****** */
@@ -198,6 +277,10 @@ h2 {
   display: block;
   padding: 16px;
   text-align: center;
+}
+
+#action-talkToDallas {
+  margin: 16px 0;
 }
 
 /******* HEADER ******/
@@ -270,7 +353,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
   margin: 10px 0 16px 0;
 }
 .carousel-item #cta-homepage p {
-  width: 643px;
+  width: 521px;
 }
 
 .carousel-control-prev,
@@ -478,7 +561,86 @@ header #header-contact_info_container-aside .contact_info-content-a {
   width: 96%;
 }
 
+/* --- LEVEL #6 --- */
+#homepage-section-6 {
+  display: inline-flex;
+}
+
+#level_6-img-container {
+  width: 47.6%;
+}
+
+#level_6-img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 46%;
+}
+
+#level_6-content-background {
+  width: 54%;
+  height: auto;
+  margin: 0 auto;
+  padding: 11px 16px;
+  position: relative;
+  top: 15%;
+}
+
 /****** FOOTER ******/
+footer {
+  width: 100%;
+  display: inline-flex;
+}
+
+#footer-info-container {
+  padding: 26px 0;
+  position: relative;
+  left: 76px;
+}
+
+#footer-logo {
+  width: 295px;
+  height: auto;
+}
+
+#footer-socialMedia-container {
+  margin: 16px;
+}
+
+#footer-socialMedia-facebook {
+  margin: 0 auto;
+  display: block;
+}
+
+#footer-copyright-container {
+  text-align: center;
+}
+
+#footer-links-container {
+  padding: 26px 0;
+  position: relative;
+  left: 44.5%;
+}
+
+#footer-links {
+  padding-left: 0;
+  list-style-type: none;
+}
+#footer-links li {
+  margin-bottom: 11px;
+}
+#footer-links li:last-of-type {
+  margin-bottom: 0;
+}
+
+#footer-action-container {
+  height: calc(100% - 56px);
+  position: relative;
+  top: 56px;
+  left: calc(100% - 295px - 208px - 223px - 76px);
+}
+
 /* ****** BREAKPOINTS ****** */
 /* ------ 1920x???? ------- */
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
