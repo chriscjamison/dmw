@@ -14,7 +14,19 @@ h2,
 ul li,
 #level_5-services-container a,
 #footer-copyright,
-.footer-links-a {
+.footer-links-a,
+#form-contact label,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+.content-form-a,
+#form-maa label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time,
+.nav-mobile-a,
+.mobile-contactinfo-item-span {
   font-family: adelle-sans, sans-serif;
 }
 
@@ -22,15 +34,27 @@ ul li,
 .contact_info-content-span,
 .contact_info-content-a,
 .action-a,
+#level_5-services-container .level_5-service-div .action-a,
 #footer-copyright,
-.footer-links-a {
+.footer-links-a,
+.content-form-a,
+#maa-form-a {
   font-size: 1.1rem;
 }
 
 .nav-top-a,
 .content-p,
 ul li,
-#level_5-services-container a {
+#level_5-services-container a,
+#form-contact label,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#form-maa label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time {
   font-size: 1.33rem;
 }
 
@@ -50,7 +74,8 @@ h2 {
   font-weight: 400;
 }
 
-.action-a {
+.action-a,
+.mobile-contactinfo-item-span {
   font-weight: 600;
 }
 
@@ -84,17 +109,33 @@ h2 {
 .action-a,
 .carousel-cta h1,
 .carousel-cta p,
-#level_2-p {
+#level_2-p,
+.level_2-details-h2,
+.level_2-details-ul li,
+#level_5-services-container .level_5-service-div .action-a {
   color: #f4f5f0;
 }
 
 #level_1-p,
-#footer-copyright {
+#footer-copyright,
+#form-contact label,
+#contact-confirmation_message p,
+#contact-error_message p,
+#form-maa label,
+#maa-confirmation_message p,
+#maa-error_message p {
   color: #98a0a5;
 }
 
-.footer-links-a {
+.footer-links-a,
+.content-form-a {
   color: #a5bcbb;
+}
+
+.contact_info-content-a,
+.nav-mobile-a,
+#mobile-contactinfo-phonenumber {
+  color: #384883;
 }
 
 .contact_info-listing-div,
@@ -102,28 +143,33 @@ h2 {
   color: #2f3e55;
 }
 
-.contact_info-content-a {
-  color: #384883;
-}
-
 #level_4-content-container h2,
 #level_4-service_area_list,
 #level_5-content-background,
 #level_5-services-container,
-#level_5-services-container a {
+#level_5-services-container a,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time,
+.mobile-contactinfo-item-span {
   color: #2b2c30;
 }
 
 /****** COLOR STYLING ******/
 .nav-top-a {
-  background-color: rgba(87, 151, 148, 0.85);
+  background-color: #579794;
 }
 
-#header-contact_info_container-aside {
-  background: white;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, #579794 100%);
+/* 
+ {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(87,151,148,1) 100%)
 }
-
+ */
 .action-a {
   background-color: #384883;
 }
@@ -146,10 +192,8 @@ h2 {
   background: linear-gradient(135deg, #a5bcbb 40%, #2f3e55 83%);
 }
 
-#level_3-content-container {
-  background-color: #fff;
-}
-
+#header-contact_info_container-aside,
+#level_3-content-container,
 #homepage-section-5,
 #level_6-content-background {
   background-color: #fff;
@@ -162,10 +206,12 @@ h2 {
 
 #homepage-section-6 {
   background: white;
-  background: linear-gradient(180deg, white 0%, #a5bcbb 15%, #a5bcbb 68%, #9f9c99 68%, #f4f5f0 100%);
+  background: linear-gradient(180deg, white 0%, #a5bcbb 23%, #a5bcbb 58%, #9f9c99 58%, #f4f5f0 100%);
 }
 
-footer {
+footer,
+#contact-bkgrnd,
+#maa-bkgrnd {
   background-color: #2b2c30;
 }
 
@@ -194,6 +240,12 @@ footer {
   border-bottom: none;
 }
 
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea {
+  border: 2px solid #98a0a5;
+}
+
 /****** SHADOWS ******/
 #header-contact_info_container-aside,
 .action-a,
@@ -211,7 +263,7 @@ footer {
 /****** LINK/BUTTON BEHAVIOR ******/
 .nav-top-a {
   transition-property: color, backgroundColor, fontWeight;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
 
@@ -229,13 +281,13 @@ footer {
 
 .action-a {
   transition-property: color, backgroundColor, border, textDecoration, fontWeight;
-  transition-duration: 0.2s;
+  transition-duration: 0.1 0.5s;
   transition-timing-function: ease-out;
 }
 
 .action-a:hover {
   background-color: #579794;
-  border: 4px solid #f4f5f0;
+  border: 3px solid #f4f5f0;
   font-weight: 800;
   color: #f4f5f0;
   text-decoration: none;
@@ -249,27 +301,71 @@ footer {
   text-decoration: none;
 }
 
-.footer-links-a {
+.footer-links-a,
+.content-form-a {
   transition-property: color, fontWeight;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
-.footer-links-a:hover {
+.footer-links-a:hover,
+.content-form-a:hover {
   font-weight: 400;
   color: #f4f5f0;
 }
 
-.footer-links-a:active {
+.footer-links-a:active,
+.content-form-a:active {
   font-weight: 800;
   color: #f4f5f0;
 }
 
+.nav-mobile-a,
+#mobile-contactinfo-phonenumber {
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.nav-mobile-a:active,
+#mobile-contactinfo-phonenumber:active {
+  color: #fff;
+}
+
 /******* COMMON ELEMENTS ****** */
+.visible-desktop {
+  display: block !important;
+}
+
+.visible-desktop-inlineflex {
+  display: inline-flex !important;
+}
+
+.visible-mobile,
+.visible-mobile-inlineflex {
+  display: none !important;
+}
+
+.overflow-hidden-html {
+  overflow-y: hidden !important;
+}
+
+#contact-confirmation_message,
+#maa-confirmation_message,
+#contact-error_message,
+#maa-error_message,
+#mobile-nav-links {
+  display: none;
+}
+
 :root {
   margin: 0;
   padding: 0;
   z-index: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .action-a {
@@ -281,6 +377,21 @@ footer {
 
 #action-talkToDallas {
   margin: 16px 0;
+}
+
+.level_2-button-not_visible,
+.level_2-button-visible {
+  display: none !important;
+}
+
+.level_2-button-visible,
+.level_2-details-visible {
+  display: block !important;
+  opacity: 0;
+}
+
+.level_5-service-visible {
+  display: block !important;
 }
 
 /******* HEADER ******/
@@ -375,7 +486,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 /* --- LEVEL #1 --- */
 #homepage-section-1 {
-  background-image: url("/assets/img/homepage/level_1.jpg");
+  background-image: url("/assets/img/homepage/desktop/level_1.jpg");
 }
 
 #level_1-p {
@@ -432,7 +543,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 }
 
 .level_2-service-div {
-  width: 50%;
+  width: 33.3%;
   height: 100%;
   display: flex;
   background-size: 100%;
@@ -444,19 +555,30 @@ header #header-contact_info_container-aside .contact_info-content-a {
   z-index: 200;
 }
 
+.level_2-details-div {
+  width: 80%;
+  margin: 50px auto 0 auto;
+  display: none;
+  z-index: 200;
+}
+
 .level_2-service-overlay-div {
-  width: 50%;
-  height: 46.3%;
+  width: 33.3%;
+  height: 37%;
   position: absolute;
   opacity: 0.5;
 }
 
-#level_2-service-auto_detailing {
-  background-image: url("/assets/img/homepage/level_2-auto.jpg");
+#level_2-service-home_exterior_cleaning {
+  background-image: url("/assets/img/homepage/desktop/level_2-exterior.jpg");
 }
 
-#level_2-service-home_exterior_cleaning {
-  background-image: url("/assets/img/homepage/level_2-exterior.jpg");
+#level_2-service-auto_detailing {
+  background-image: url("/assets/img/homepage/desktop/level_2-auto.jpg");
+}
+
+#level_2-service-deck_cleaning {
+  background-image: url("/assets/img/homepage/desktop/level_2-deck.jpg");
 }
 
 /* --- LEVEL #3 --- */
@@ -466,7 +588,6 @@ header #header-contact_info_container-aside .contact_info-content-a {
   top: 15%;
   left: 59.3%;
   opacity: 0.8;
-  z-index: 300;
 }
 #level_3-content-container .content-p {
   padding: 11px 16px;
@@ -483,7 +604,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 /* --- LEVEL #4 --- */
 #homepage-section-4 {
-  background-image: url("/assets/img/homepage/level_4.jpg");
+  background-image: url("/assets/img/homepage/desktop/level_4.jpg");
   display: flex;
 }
 
@@ -519,7 +640,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 /* --- LEVEL #5 --- */
 #homepage-section-5 {
   display: inline-flex;
-  background-image: url("/assets/img/homepage/level_5.png");
+  background-image: url("/assets/img/homepage/desktop/level_5.png");
   background-position: 0 50%;
   background-size: 40%;
   background-repeat: repeat-x;
@@ -542,7 +663,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 #level_5-services-container {
   width: 27%;
-  height: 34%;
+  height: fit-content;
   padding: 11px 16px;
   position: relative;
   top: 15%;
@@ -561,6 +682,14 @@ header #header-contact_info_container-aside .contact_info-content-a {
   width: 96%;
 }
 
+.level_5-service-div {
+  display: none;
+  margin-bottom: 16px;
+}
+.level_5-service-div p {
+  margin-bottom: 26px;
+}
+
 /* --- LEVEL #6 --- */
 #homepage-section-6 {
   display: inline-flex;
@@ -575,7 +704,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
   margin: 0 auto;
   display: block;
   position: relative;
-  top: 46%;
+  top: 23%;
 }
 
 #level_6-content-background {
@@ -641,12 +770,673 @@ footer {
   left: calc(100% - 295px - 208px - 223px - 76px);
 }
 
+/****** CONTACT FORM ******/
+#content-form-contact,
+#contact-bkgrnd,
+#content-form-maa,
+#maa-bkgrnd {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 350;
+}
+
+#content-form-contact,
+#content-form-maa {
+  padding: 3em;
+}
+
+#content-form-contact a,
+#content-form-maa a {
+  display: block;
+  float: right;
+}
+
+#contact-bkgrnd,
+#maa-bkgrnd {
+  z-index: 340;
+}
+
+#form-contact,
+#form-maa {
+  width: 360px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  top: 3em;
+}
+
+#contact-confirmation_message,
+#maa-confirmation_message,
+#contact-error_message,
+#maa-error_message {
+  width: 23.25em;
+  height: 24.5em;
+  padding: 2em 2.5em;
+  position: absolute;
+  top: 15%;
+  left: calc(60% - 408px);
+  z-index: 350;
+}
+
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#form-contact label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time,
+#form-maa label {
+  width: 360px;
+}
+
+#input-contact-submit,
+#input-maa-submit {
+  margin-top: 0.5em;
+  display: inline-block;
+}
+
+#form-contact label,
+#form-maa label {
+  margin: 1em 0 0.25em 0;
+  display: block;
+}
+
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time {
+  padding: 0.5em;
+}
+
+#contact-confirmation_message p,
+#maa-confirmation_message p,
+#contact-error_message p,
+#maa-error_message p {
+  padding: 0.25em 0;
+  font-size: 1.15em;
+}
+
 /* ****** BREAKPOINTS ****** */
 /* ------ 1920x???? ------- */
 @media screen and (min-width: 1601px) and (max-width: 1920px) {
   .homepage-section {
     height: 868px;
     background-size: 100%;
+  }
+
+  #homepage-section-2,
+#homepage-section-6 {
+    height: 657px;
+  }
+}
+/* ------ MOBILE PHONES ------- */
+@media screen and (max-width: 414px) {
+  /****** TYPOGRAPHICAL ELEMENTS ******/
+  .carousel-cta h1 {
+    font-size: 2.08rem;
+  }
+
+  #level_4-content-container h2 {
+    font-size: 1.33rem;
+  }
+
+  .carousel-item #cta-homepage p,
+.content-p,
+ul li,
+.level_2-details-h2,
+#level_5-services-container a,
+.mobile-contactinfo-item-span,
+#nav-mobile-contactinfo-phonenumber .nav-mobile-a,
+#form-contact label,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#form-maa label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time {
+    font-size: 1.1rem;
+  }
+
+  .level_2-details-ul li {
+    font-size: 0.9rem;
+  }
+
+  .action-a,
+#level_5-services-container .level_5-service-div .action-a {
+    font-size: 0.8rem;
+  }
+
+  #level_1-p,
+#level_3-content-container .content-p,
+#level_4-content-container h2,
+ul li {
+    color: #2b2c30;
+  }
+
+  .level_2-details-h2,
+.level_2-details-ul li {
+    color: #f4f5f0;
+  }
+
+  /****** COLOR STYLING ******/
+  #mobile-cta-copy {
+    background-color: #98a0a5;
+  }
+
+  .carousel,
+#mobile-menu,
+#level_1-p,
+#level_3-content-container,
+#homepage-section-4,
+#homepage-section-5,
+#level_6-content-background {
+    background-color: #f4f5f0;
+  }
+
+  #level_5-services-container,
+#level_5-content-container,
+#homepage-section-6 {
+    background-color: unset;
+  }
+
+  #level_6-img-container {
+    background: #f4f5f0;
+    background: linear-gradient(180deg, #f4f5f0 0%, #a5bcbb 15%, #a5bcbb 68%, #9f9c99 68%, #f4f5f0 100%);
+  }
+
+  #mobile-nav-links {
+    background-color: #a5bcbb;
+  }
+
+  /****** BORDERS ******/
+  .content-p,
+#level_3-content-container,
+#level_4-map,
+#level_6-content-background {
+    border-radius: 0;
+  }
+
+  #mobile-cta-copy {
+    border-bottom: 3px solid #f4f5f0;
+  }
+
+  #mobile-menu {
+    border-top: 3px solid #98a0a5;
+  }
+
+  /****** SHADOWS ******/
+  #level_4-map,
+#level_5-services-container,
+#level_5-content-background,
+#level_6-content-background {
+    box-shadow: none;
+  }
+
+  /****** COMMON ELEMENTS ******/
+  .visible-mobile {
+    display: block !important;
+  }
+
+  .visible-mobile-inlineflex {
+    display: inline-flex !important;
+  }
+
+  #mobile-nav-links {
+    display: none;
+  }
+
+  .visible-desktop,
+.visible-desktop-inlineflex {
+    display: none !important;
+  }
+
+  .action-a {
+    width: 154px;
+    padding: 8px;
+  }
+
+  /****** HEADER ******/
+  #mobile-header-logo-container {
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    background-image: url("/assets/img/homepage/mobile/header-background.png");
+    background-repeat: repeat-x;
+    z-index: 400;
+  }
+
+  #mobile-header-link {
+    width: 183px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 21px;
+  }
+
+  #mobile-header-logo {
+    width: 183px;
+    height: auto;
+  }
+
+  /****** MOBILE NAVIGATION ******/
+  #mobile-menu {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    z-index: 400;
+  }
+
+  #mobile-menu-icon {
+    width: calc(100% - 26px - 154px);
+    display: block;
+    position: relative;
+    top: 11px;
+    left: 26px;
+  }
+
+  #mobile-action-maa {
+    height: 40px;
+    position: relative;
+    top: 6px;
+  }
+
+  #mobile-nav-links {
+    width: 100%;
+    padding: 26px;
+    position: fixed;
+    top: 64px;
+    z-index: 300;
+  }
+
+  .mobile-contactinfo-item-div {
+    margin-bottom: 26px;
+    position: relative;
+    bottom: -135px;
+  }
+
+  .mobile-contactinfo-item-span {
+    display: block;
+  }
+
+  #mobile-nav-ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    position: absolute;
+    bottom: 26px;
+    list-style-type: none;
+  }
+  #mobile-nav-ul li {
+    margin-bottom: 16px;
+  }
+  #mobile-nav-ul li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /****** CAROUSEL ******/
+  .carousel {
+    top: 65px;
+  }
+
+  .carousel-item {
+    height: 427px;
+  }
+
+  .carousel-item .carousel-cta {
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .carousel-item #cta-homepage p {
+    width: 100%;
+  }
+
+  #mobile-cta-copy {
+    padding: 26px;
+  }
+
+  /****** COPY ******/
+  .container {
+    position: relative;
+    top: 65px;
+  }
+
+  /* ------ HOMEPAGE ------ */
+  /* --- LEVEL #1 --- */
+  #homepage-section-1 {
+    height: 596px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 432px;
+  }
+
+  #level_1-p {
+    width: 100%;
+    height: 71.5%;
+    margin-bottom: 0;
+    padding: 20px 26px;
+    top: 0;
+    left: 0;
+  }
+
+  /* --- LEVEL #2 --- */
+  #level_2-background-top {
+    height: 100%;
+    display: block;
+  }
+
+  #level_2-content-container,
+#level_2-icons-container {
+    width: 100%;
+  }
+
+  #level_2-p {
+    width: 100%;
+    padding: 20px 26px;
+    top: 0;
+  }
+
+  #level_2-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+  #level_2-icons .level_2-icon-img {
+    width: 144px;
+    margin: 0 auto 42px auto;
+    display: block;
+  }
+
+  #level_2-background-bottom {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .level_2-service-div {
+    width: 100%;
+    height: 187px;
+    display: block;
+    position: relative;
+    background-size: 100%;
+  }
+  .level_2-service-div .action-a {
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 77px);
+    z-index: 300;
+  }
+
+  .level_2-details-div {
+    width: 100%;
+    margin: 0;
+    padding: 26px;
+    position: relative;
+  }
+
+  .level_2-service-overlay-div {
+    width: 100%;
+    height: 187px;
+    top: 0;
+  }
+
+  /* --- LEVEL #3 --- */
+  #level_3-content-container {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  #level_3-content-container .content-p {
+    padding: 11px 26px 0 26px;
+  }
+  #level_3-content-container .content-p:first-of-type {
+    padding: 20px 26px 0 26px;
+  }
+  #level_3-content-container .content-p:last-of-type {
+    padding: 11px 26px 20px 26px;
+  }
+
+  #level_3-img {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  /* --- LEVEL #4 --- */
+  #homepage-section-4 {
+    display: block;
+    background-image: none;
+  }
+
+  #level_4-content-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px 26px;
+    top: 0;
+  }
+  #level_4-content-container h2 {
+    margin: 0 0 10px 0;
+  }
+  #level_4-content-container ul {
+    margin: 0;
+  }
+
+  #level_4-map {
+    width: 100%;
+    height: 360px;
+    top: 0;
+    left: 0;
+  }
+
+  /* --- LEVEL #5 --- */
+  #homepage-section-5 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: none;
+  }
+
+  #level_5-services-container {
+    width: 100%;
+    height: auto;
+    padding: 20px 26px 0 26px;
+    top: 0;
+    left: 0;
+  }
+
+  #level_5-services-list {
+    margin-bottom: 0;
+  }
+
+  #level_5-content-container {
+    width: 100%;
+  }
+
+  #level_5-content-background {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    top: 0;
+  }
+  #level_5-content-background .content-p {
+    padding: 11px 26px 0 26px;
+  }
+  #level_5-content-background .content-p:last-of-type {
+    padding: 11px 26px 10px 26px;
+  }
+
+  /* --- LEVEL #6 --- */
+  #homepage-section-6 {
+    display: block;
+  }
+
+  #level_6-img-container {
+    width: 100%;
+    height: 290px;
+  }
+
+  #level_6-img {
+    width: 100%;
+    margin: 0;
+    padding: 0 26px;
+    top: 110px;
+  }
+
+  #level_6-content-background {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+  #level_6-content-background .content-p {
+    padding: 11px 26px 0 26px;
+  }
+  #level_6-content-background .content-p:last-of-type {
+    margin-bottom: 0;
+    padding: 11px 26px 20px 26px;
+  }
+
+  #action-talkToDallas {
+    margin: 16px 0 6px 26px;
+  }
+
+  /****** FOOTER ******/
+  footer {
+    height: auto;
+    margin-bottom: 60px;
+    display: block;
+    position: relative;
+    top: 65px;
+  }
+
+  #footer-info-container {
+    margin-bottom: 26px;
+    left: 0;
+  }
+
+  #footer-logo {
+    width: 183px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #footer-links-container,
+#footer-action-container {
+    display: none;
+  }
+
+  /****** CONTACT FORM / MAKE AN APPOINTMENT FORM ******/
+  #form-contact,
+#form-maa,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#form-contact label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time,
+#form-maa label,
+#contact-confirmation_message,
+#maa-confirmation_message,
+#contact-error_message,
+#maa-error_message {
+    width: 100%;
+  }
+
+  #content-form-contact,
+#contact-bkgrnd,
+#content-form-maa,
+#maa-bkgrnd {
+    top: 64px;
+  }
+
+  #form-contact,
+#form-maa {
+    top: 16px;
+  }
+
+  #content-form-contact,
+#content-form-maa {
+    padding: 26px;
+  }
+
+  #contact-confirmation_message,
+#maa-confirmation_message,
+#contact-error_message,
+#maa-error_message {
+    height: auto;
+    padding: 26px;
+    top: 84px;
+    left: 0;
+  }
+
+  #content-form-contact,
+#content-form-maa {
+    z-index: 250;
+  }
+
+  #contact-bkgrnd,
+#maa-bkgrnd {
+    z-index: 200;
+  }
+}
+/* ------ ANDROID ------- */
+@media screen and (width: 360px) {
+  #form-contact textarea {
+    height: 145px;
+  }
+}
+/* ------ APPLE iPHONE ------- */
+@media screen and (width: 375px) {
+  /****** COPY ******/
+  /* --- LEVEL #1 --- */
+  #homepage-section-1 {
+    height: 603px;
+  }
+
+  #form-contact textarea {
+    height: 172px;
+  }
+}
+/* ------ APPLE iPHONE ------- */
+@media screen and (width: 375px) and (height: 812px) {
+  /****** MOBILE NAVIGATION ******/
+  .mobile-contactinfo-item-div {
+    bottom: -307px;
+  }
+}
+/* ------ APPLE iPHONE + ------- */
+@media screen and (width: 414px) {
+  /****** MOBILE NAVIGATION ******/
+  .mobile-contactinfo-item-div {
+    bottom: -231px;
+  }
+
+  /****** COPY ******/
+  /* --- LEVEL #1 --- */
+  #homepage-section-1 {
+    height: 621px;
+  }
+
+  #level_1-p {
+    height: 431px;
+  }
+
+  /* --- LEVEL #6 --- */
+  #level_6-img {
+    top: 95px;
   }
 }
 

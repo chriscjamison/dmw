@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dallas Mobile Wash -- For pressure washing your home, deck, or car, reach for the star!</title>
+    
+    <!-- BOOTSTRAP 4 REFERENCE -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- STYLESHEET REFERENCE LINK -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=9">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="contact-confirmation_message">
+      <p>
+        Thank you for sending Dallas Mobile Wash your message!
+      </p>
+      <p>
+        Expect a phone call from Dallas Mobile Wash sometime soon.
+      </p>
+      <p class="visible-desktop">
+        Click the message to return to the home page.
+      </p>
+      <p class="visible-mobile">
+        Tap the message to return to the home page.
+      </p>
+    </div>
+
+    <div id="contact-error_message">
+      <p>
+        Apparently some of your information cannot be processed 
+        by the website.
+      </p>
+      <p>
+        Please retype your information in the form on this page.
+      </p>
+      <p class="visible-desktop">
+        Click the message and complete the form.
+      </p>
+      <p class="visible-mobile">
+        Tap the message and complete the form.
+      </p>
+    </div>
+
+<!-- MOBILE HEADER -->
+    <div class="visible-mobile" id="mobile-header-logo-container">
+      <a href="/" title="Home" id="mobile-header-link"><img src="/assets/img/common/logo/logo.png" alt="Dallas Mobile Wash - Autos &#183; Homes &#183; Decks" id="mobile-header-logo"></a>
+    </div>   
+
+<!-- MOBILE LINKS -->
+    <div id="mobile-nav-links">
+      <div class="mobile-contactinfo-item-div">
+        <span class="mobile-contactinfo-item-span">Phone Number:</span>
+        <a href="tel:314-262-2641" title="314-262-2641" class="nav-mobile-a" id="nav-mobile-contactinfo-phonenumber">314-262-2641</a>
+      </div>
+      <div class="mobile-contactinfo-item-div">
+        <a href="/talk-to-dallas.htm" title="Talk to Dallas" class="action-a" id="mobile-action-ttd">Talk to Dallas</a>
+      </div>
+      <ul id="mobile-nav-ul">
+        <li>
+          <a href="#mobile-wash-appeal" title="Mobile Wash Appeal" class="nav-mobile-a" id="nav-mobile-a-mwa">Mobile Wash Appeal</a>
+        </li>
+        <li>
+          <a href="#services" title="Services" class="nav-mobile-a" id="nav-mobile-a-services">Services</a>
+        </li>
+        <li>
+          <a href="#about-dallas-mobile-wash" title="About Dallas Mobile Wash" class="nav-mobile-a" id="nav-mobile-a-admw">About Dallas Mobile Wash</a>
+        </li>
+        <li>
+          <a href="#service-area" title="Service Area" class="nav-mobile-a" id="nav-mobile-a-sa">Service Area</a>
+        </li>
+        <li>
+          <a href="#info-and-pricing" title="Info &amp; Pricing" class="nav-mobile-a" id="nav-mobile-a-iap">Info &amp; Pricing</a>
+        </li>
+      </ul>
+    </div>
+
+<!-- MOBILE MAIN NAVIGATION -->
+    <nav class="visible-mobile-inlineflex" id="mobile-menu">
+      <a href="javascript:displayMobileMenu();" title="Menu" id="mobile-menu-icon"><img src="/assets/img/common/menu/menu.png" id="menu-icon-img"></a>
+      <a href="javascript:loadAppointmentForm();" title="Make an Appointment" class="action-a" id="mobile-action-maa">Make an Appointment</a>
+    </nav>
+    <div id="content-form-contact">
+      <a href="/" title="Go Back to Homepage" class="content-form-a">Go Back to Homepage</a> 
+			<form method="post" action="/assets/php/talk-to-dallas.php?v=9" name="form-contact" id="form-contact">
+				<label for="full_name">Please type your full name below:</label>
+				<input type="text" placeholder="Type your full name" size="25" max-size="80" name="full_name" id="input-contact-full_name" />
+				<label for="phone_number">Please type your phone number below:</label>
+				<input type="tel" placeholder="Type your phone number" size="14" max-size="14" name="phone_number" id="input-contact-phone_number" />
+				<label for="message">Please compose your message below:</label>
+				<textarea placeholder="Type your message here" cols="27" rows="8" name="message" id="input-contact-message"></textarea>
+				<!-- <input type="reset" value="Clear Information" name="input-reset" class="action-a" id="input-contact-reset" /> -->
+				<input type="submit" value="Send Message" name="input-submit" class="action-a" id="input-contact-submit" />
+			</form>
+		</div>
+    <div id="contact-bkgrnd"></div>
+    
+<!-- ADOBE FONTS REFERENCE -->
+    <link rel="stylesheet" href="https://use.typekit.net/msj2vtz.css"> 
+        
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+
+<!-- Site JavaScript -->
+    <script src="/assets/js/main.js?v=9"></script>
+  </body>
+</html>
