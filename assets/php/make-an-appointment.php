@@ -127,7 +127,7 @@
 
 <?php
   if ($valid_fields == 4) {
-    $to      = "chris@chriscjamison.com";
+    $to      = "dalllasstl@gmail.com";
     $subject = "Suggested Appointment for " . $visitors_full_name . ", sent from dallasmobilewash.net";
     $message = 
               "From: " . $visitors_full_name . "\n\n" . 

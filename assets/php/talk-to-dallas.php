@@ -121,7 +121,7 @@
 
 <?php
   if ($valid_fields == 3) {
-    $to      = "chris@chriscjamison.com";
+    $to      = "dalllasstl@gmail.com";
     $subject = "Message from " . $visitors_full_name . ", sent from dallasmobilewash.net";
     $message = 
               "From: " . $visitors_full_name . "\n\n" . 

@@ -187,11 +187,6 @@ h2 {
   background-color: #2b2c30;
 }
 
-#homepage-section-3 {
-  background: #a5bcbb;
-  background: linear-gradient(135deg, #a5bcbb 40%, #2f3e55 83%);
-}
-
 #header-contact_info_container-aside,
 #level_3-content-container,
 #homepage-section-5,
@@ -338,11 +333,12 @@ footer,
 }
 
 .visible-desktop-inlineflex {
-  display: inline-flex !important;
+  display: inline-flex;
 }
 
 .visible-mobile,
-.visible-mobile-inlineflex {
+.visible-mobile-inlineflex,
+.visible-tablet {
   display: none !important;
 }
 
@@ -582,6 +578,10 @@ header #header-contact_info_container-aside .contact_info-content-a {
 }
 
 /* --- LEVEL #3 --- */
+#homepage-section-3 {
+  background-image: url("/assets/img/homepage/desktop/level_3.jpg");
+}
+
 #level_3-content-container {
   width: 27%;
   position: relative;
@@ -593,15 +593,16 @@ header #header-contact_info_container-aside .contact_info-content-a {
   padding: 11px 16px;
 }
 
+/* 
+
 #level_3-img {
   width: 53%;
   display: block;
   position: relative;
-  bottom: 35%;
+  bottom: 144px;
   left: 144px;
   z-index: 100;
-}
-
+} */
 /* --- LEVEL #4 --- */
 #homepage-section-4 {
   background-image: url("/assets/img/homepage/desktop/level_4.jpg");
@@ -631,7 +632,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 }
 
 #level_4-map {
-  width: 577px;
+  width: 27%;
   height: 433px;
   top: 15%;
   left: 9.1%;
@@ -652,7 +653,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 #level_5-content-background {
   width: 54%;
-  height: 59%;
+  height: fit-content;
   margin: 0 auto;
   position: relative;
   top: 15%;
@@ -874,6 +875,414 @@ footer {
   #homepage-section-2,
 #homepage-section-6 {
     height: 657px;
+  }
+}
+/* ------ > MOBILE DISPLAYS && < 1080P ------- */
+@media screen and (min-width: 415px) and (max-width: 1900px) {
+  /****** TYPOGRAPHIC ELEMENTS ******/
+  .nav-top-a {
+    background: none;
+    color: #fff;
+  }
+
+  /****** LINK/BUTTON BEHAVIOR ******/
+  .nav-top-a:hover {
+    background-color: #579794;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  /****** COLOR STYLING ******/
+  /****** COMMON ELEMENTS ******/
+  .visible-tablet {
+    display: block !important;
+  }
+
+  /****** TABLET NAVIGATION ******/
+  .tablet-nav-visible {
+    width: 440px;
+    height: 930px;
+    position: absolute;
+    top: -76px;
+    right: -76px;
+    background-color: #a5bcbb;
+    z-index: 200;
+  }
+
+  #top-tablet-nav {
+    position: absolute;
+    top: 38px;
+    right: 76px;
+    z-index: 300;
+  }
+
+  #top-nav-ul {
+    width: 314px;
+    display: none;
+    position: absolute;
+    top: 138px;
+    right: 54px;
+  }
+
+  header {
+    width: calc(100% - 76px - 76px);
+  }
+  header #header-contact_info_container-aside {
+    width: 255px;
+    position: absolute;
+    right: 162px;
+  }
+}
+/* ------ > MOBILE DISPLAYS && < 1080P ------- */
+@media screen and (min-width: 415px) and (max-width: 1600px) {
+  /****** TYPOGRAPHIC ELEMENTS ******/
+  .carousel-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  .carousel-cta p,
+h2 {
+    font-size: 1.33rem;
+  }
+
+  .nav-top-a,
+.content-p,
+ul li,
+#level_5-services-container a,
+#form-contact label,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#form-maa label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time .contact_info-heading-span,
+.contact_info-content-span,
+.contact_info-content-a,
+.action-a,
+#level_5-services-container .level_5-service-div .action-a,
+#footer-copyright,
+.footer-links-a,
+.content-form-a,
+#maa-form-a {
+    font-size: 1rem;
+  }
+
+  /****** MAIN NAVIGATION ******/
+  #nav-logo-desktop,
+#footer-logo {
+    width: 260px;
+  }
+
+  /****** CAROUSEL ******/
+  .carousel-item .carousel-cta {
+    bottom: 76px;
+  }
+
+  /****** COPY ******/
+  .homepage-section {
+    height: 623px;
+    background-size: 100%;
+  }
+
+  /* --- LEVEL #1 --- */
+  #level_1-p {
+    top: 15%;
+  }
+
+  /* --- LEVEL #2 --- */
+  #homepage-section-2 {
+    height: 437px;
+  }
+
+  #level_2-p {
+    top: 21%;
+  }
+
+  #level_2-icons {
+    width: 294px;
+  }
+  #level_2-icons .level_2-icon-img {
+    width: 91px;
+  }
+
+  .level_2-details-div {
+    margin: 20px auto 0 auto;
+  }
+
+  .level_2-service-overlay-div {
+    height: 24%;
+  }
+
+  /* --- LEVEL #6 --- */
+  #level_6-img {
+    top: 40%;
+  }
+
+  /****** FOOTER ******/
+  #footer-links-container {
+    left: 22%;
+  }
+}
+/* ------ > TABLET < 720P ------- */
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .level_2-service-overlay-div {
+    height: 24.3%;
+  }
+}
+/* ------ TABLET DISPLAYS ------ */
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  /****** TYPOGRAPHIC ELEMENTS ******/
+  .carousel-cta p,
+h2 {
+    font-size: 1.1rem;
+  }
+
+  .contact_info-heading-span,
+.contact_info-content-span,
+.contact_info-content-a,
+.action-a,
+#level_5-services-container .level_5-service-div .action-a,
+#footer-copyright,
+.footer-links-a,
+.content-form-a,
+#maa-form-a {
+    font-size: 1rem;
+  }
+
+  .nav-top-a,
+.content-p,
+ul li,
+#level_5-services-container a,
+#form-contact label,
+#input-contact-full_name,
+#input-contact-phone_number,
+#form-contact textarea,
+#form-maa label,
+#input-maa-full_name,
+#input-maa-phone_number,
+#input-maa-date,
+#input-maa-time .contact_info-heading-span,
+.contact_info-content-span,
+.contact_info-content-a,
+.action-a,
+#level_5-services-container .level_5-service-div .action-a,
+#footer-copyright,
+.footer-links-a,
+.content-form-a,
+#maa-form-a {
+    font-size: 0.9rem;
+  }
+
+  /****** HEADER ******/
+  header {
+    top: 26px;
+  }
+  header #header-contact_info_container-aside {
+    width: 215px;
+    top: 76px;
+    right: 26px;
+  }
+
+  /****** TABLET NAVIGATION ******/
+  #top-tablet-nav {
+    right: 26px;
+  }
+
+  #nav-logo-desktop,
+#footer-logo {
+    width: 210px;
+  }
+
+  /****** COMMON ELEMENTS ******/
+  .action-a {
+    width: 182px;
+  }
+
+  /****** COPY ******/
+  .homepage-section {
+    height: 458px;
+  }
+
+  /* --- LEVEL #4 --- */
+  #level_4-map {
+    height: 272px;
+  }
+
+  /****** FOOTER ******/
+  #footer-action-container {
+    left: calc(100% - 210px - 170px - 182px - 76px);
+  }
+}
+/* ------ IPAD - 768x1024 & KINDLE HDX - 800x1280 ------ */
+@media screen and (min-width: 415px) and (max-width: 800px) {
+  /****** TYPOGRAPHICAL ELEMENTS ******/
+  .carousel-cta h1 {
+    font-size: 1.75rem;
+  }
+
+  .content-desc-p {
+    font-size: 0.75rem;
+  }
+
+  /****** COMMON ELEMENTS ******/
+  .tablet-nav-visible {
+    height: 1366px;
+  }
+
+  /****** HEADER ******/
+  header {
+    width: calc(100% - 54px - 54px);
+    left: 54px;
+  }
+  header #header-contact_info_container-aside {
+    display: none;
+  }
+
+  #nav-logo-desktop,
+#footer-logo {
+    width: 150px;
+  }
+
+  #top-tablet-nav {
+    top: 0;
+    right: 0;
+  }
+
+  /****** CAROUSEL ******/
+  .carousel-item .carousel-cta {
+    width: 400px;
+    left: 54px;
+    bottom: 26px;
+  }
+  .carousel-item #cta-homepage p {
+    width: 400px;
+  }
+
+  /****** COPY ******/
+  /* --- LEVEL #1 --- */
+  #homepage-section-1 {
+    height: 350px;
+  }
+
+  #level_1-p,
+#level_3-content-container,
+#level_4-map,
+#level_5-services-container {
+    width: 37%;
+  }
+
+  #level_1-p {
+    top: 1%;
+  }
+
+  /* --- LEVEL #2 --- */
+  #homepage-section-2 {
+    height: 1445px;
+  }
+
+  #level_2-background-top {
+    height: 250px;
+  }
+
+  #level_2-p,
+#level_5-content-background {
+    width: 66%;
+  }
+
+  #level_2-background-bottom {
+    height: 1207px;
+    display: block;
+  }
+
+  .level_2-service-div {
+    width: 100%;
+    height: 33%;
+    background-repeat: no-repeat;
+  }
+
+  .level_2-details-div {
+    width: 50%;
+    margin: 13% auto 0 auto;
+  }
+
+  .level_2-service-overlay-div {
+    width: 100%;
+    height: 38.9%;
+  }
+
+  /* --- LEVEL #3 --- */
+  #homepage-section-3 {
+    height: 350px;
+  }
+
+  #level_3-content-container {
+    top: 5%;
+  }
+
+  /* --- LEVEL #4 ---- */
+  #homepage-section-4 {
+    height: 397px;
+  }
+
+  /* --- LEVEL #5 --- */
+  #homepage-section-5 {
+    height: 860px;
+  }
+
+  /* --- LEVEL #6 --- */
+  #homepage-section-6 {
+    height: 380px;
+  }
+
+  #level_6-img-container {
+    width: 100%;
+  }
+
+  #level_6-img {
+    width: 90%;
+    top: 47%;
+    left: 26px;
+  }
+
+  #level_6-content-background {
+    width: 82%;
+    top: 5%;
+  }
+
+  /****** FOOTER ******/
+  #footer-links-container {
+    display: none;
+  }
+
+  #footer-action-container {
+    left: calc(51%);
+  }
+}
+/* ------ IPAD PRO - 1024x1366 ------- */
+@media screen and (width: 1024px) {
+  /****** COPY ******/
+  /* --- LEVEL #2 --- */
+  #homepage-section-2 {
+    height: 355px;
+  }
+
+  #level_2-p,
+#level_2-icons {
+    top: 13%;
+  }
+
+  .level_2-service-overlay-div {
+    height: 13%;
+  }
+}
+/* ------ KINDLE HDX - 800x1280 ------- */
+@media screen and (width: 800px) {
+  /****** COPY ******/
+  /* --- LEVEL #2 --- */
+  .level_2-service-overlay-div {
+    height: 31.1%;
   }
 }
 /* ------ MOBILE PHONES ------- */
@@ -1191,6 +1600,12 @@ ul li {
   }
 
   /* --- LEVEL #3 --- */
+  #homepage-section-3 {
+    height: 571px;
+    background-position-y: 22%;
+    background-size: 152%;
+  }
+
   #level_3-content-container {
     width: 100%;
     top: 0;
@@ -1205,12 +1620,6 @@ ul li {
   }
   #level_3-content-container .content-p:last-of-type {
     padding: 11px 26px 20px 26px;
-  }
-
-  #level_3-img {
-    width: 100%;
-    left: 0;
-    bottom: 0;
   }
 
   /* --- LEVEL #4 --- */
@@ -1409,6 +1818,12 @@ ul li {
   #form-contact textarea {
     height: 172px;
   }
+
+  /* --- LEVEL #3 --- */
+  #homepage-section-3 {
+    height: 590px;
+    background-position-y: 70px;
+  }
 }
 /* ------ APPLE iPHONE ------- */
 @media screen and (width: 375px) and (height: 812px) {
@@ -1432,6 +1847,12 @@ ul li {
 
   #level_1-p {
     height: 431px;
+  }
+
+  /* --- LEVEL #3 --- */
+  #homepage-section-3 {
+    height: 605px;
+    background-position-y: 30px;
   }
 
   /* --- LEVEL #6 --- */

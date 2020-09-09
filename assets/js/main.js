@@ -204,6 +204,19 @@ $(message_selector).click(
 
 
 
+// CSS selectors that refer to the main tablet navigation links 
+// are passed on.
+
+var links_selector = ".nav-top-a";
+
+$(links_selector).click(
+  function () {
+    toggleTabletMenu();
+  }
+);
+
+
+
 $(document).ready( 
   function () {
     var url_string = window.location.href;
@@ -943,6 +956,128 @@ function displayMobileMenu() {
   $(main_menu_selector).fadeToggle(250);
 
   $(html_selector).toggleClass(html_class_name);
+} // END of displayMobileMenu 
+
+
+
+function toggleTabletMenu() {
+  /* @params ********************************************************
+     Name:      displayTabletMenu
+
+     Purpose:   Toggle the visibility of tablet menu. 
+  
+  **************************************************************** */
+
+  var menu_icon_selector = "";
+
+  menu_icon_img_selector = "#top-tablet-nav-icon";
+
+  var menu_icon_source = $(menu_icon_img_selector).attr("src");
+
+  var search_string = "/menu-tablet.png";
+
+  var menu_icon_selector = "#top-tablet-nav";
+  var logo_selector = "#top-nav-logo-a";
+  var aside_selector = "#header-contact_info_container-aside";
+  var main_menu_selector = "#top-nav-ul";
+  var main_content_selector = "main, .carousel";
+  var menu_background_selector = "#top-desktop-nav";
+  var html_selector = "html";
+
+  var tablet_menu_visible_class = "tablet-nav-visible";
+
+  var menu_icon_css = {};
+  var logo_and_aside_css = {};
+  var html_css = {};
+  var main_content_half_visible_css = {};
+
+  var window_width = $(window).width();
+
+  if (window_width > 415 && window_width < 1900)  {
+    if (menu_icon_source.indexOf(search_string) > -1) {
+      menu_icon_css = {
+        right: "302px"
+      };
+  
+      $(menu_icon_selector).css(menu_icon_css);
+      $(menu_icon_img_selector).attr("src", "/assets/img/common/menu/menu-tablet-close.png");
+  
+      logo_and_aside_css = {
+        display: "none"
+      };
+  
+      $(logo_selector).css(logo_and_aside_css);
+
+      if (window_width >= 800) {
+        $(aside_selector).css(logo_and_aside_css);
+      }
+      
+      $(menu_background_selector).toggleClass(tablet_menu_visible_class);
+      $(main_menu_selector).fadeIn(400);
+  
+      main_content_half_visible_css = { 
+        opacity: 0.5
+      };
+  
+      $(main_content_selector).animate(main_content_half_visible_css);
+      
+  
+    } else {
+      if (window_width >= 800 && window_width <= 1024) {
+        menu_icon_css = {
+          right: "26px"
+        };
+      } else if (window_width > 800 && window_width <= 1900) {
+        menu_icon_css = {
+          right: "76px"
+        };
+      } else if (window_width > 414 && window_width <= 800) {
+        menu_icon_css = {
+          right: "0"
+        };
+      }
+  
+      $(menu_icon_selector).css(menu_icon_css);
+      $(menu_icon_img_selector).attr("src", "/assets/img/common/menu/menu-tablet.png");
+  
+      $(menu_background_selector).toggleClass(tablet_menu_visible_class);
+      
+      logo_and_aside_css = {
+        display: "inline-flex"
+      };
+
+      setTimeout(
+        function () {
+          $(logo_selector).css(logo_and_aside_css);
+        }, 250
+      );
+
+      if (window_width >= 800)  {
+        setTimeout(
+          function () {
+            $(aside_selector).css(logo_and_aside_css);
+          }, 250
+        );  
+      }
+      
+      $(main_menu_selector).fadeOut(300);
+  
+      main_content_half_visible_css = {
+        opacity: 1
+      };
+  
+      $(main_content_selector).animate(main_content_half_visible_css);
+    }
+    
+    var html_class_name = "";
+  
+    html_class_name = "overflow-hidden-html";
+  
+    
+  
+    $(html_selector).toggleClass(html_class_name);
+  
+  }
 } // END of displayMobileMenu 
 
 
