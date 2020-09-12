@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dallas Mobile Wash -- For pressure washing your home, deck, or car, reach for the star!</title>
+    <title>Make an Appointment | Dallas Mobile Wash</title>
     
     <!-- BOOTSTRAP 4 REFERENCE -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- STYLESHEET REFERENCE LINK -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=11">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=19">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Dallas Mobile Wash, mobile wash, mobile wash services, St. Louis, St. Louis County, St. Louis Area,
+                                   St. Louis County Area, car wash, home wash, deck staining, power wash, power washing, deck cleaning,
+                                   deck clean, The Dallas Group, contact us, contact form">
+    <meta name="description" content="Make an appointment for Dallas Mobile Wash to power wash your auto, home, and deck anywhere 
+                                      within St. Louis City or St. Louis County.">                        
+
+    
   </head>
   <body>
     <div id="maa-confirmation_message">
@@ -79,12 +86,20 @@
 <!-- MOBILE MAIN NAVIGATION -->
     <nav class="visible-mobile-inlineflex" id="mobile-menu">
       <a href="javascript:displayMobileMenu();" title="Menu" id="mobile-menu-icon"><img src="/assets/img/common/menu/menu.png" id="menu-icon-img"></a>
-      <a href="javascript:loadAppointmentForm();" title="Make an Appointment" class="action-a" id="mobile-action-maa">Make an Appointment</a>
+      <a href="/make-an-appointment.htm" title="Make an Appointment" class="action-a" id="mobile-action-maa">Make an Appointment</a>
     </nav>
 
+<!-- RECAPTCHA SCRIPT -->
+    <script>
+      function onSubmit(token) {
+        document.getElementById("form-maa").submit();
+      }
+    </script>
+
+<!-- APPOINTMENT FORM -->
     <div id="content-form-maa">
       <a href="/" title="Go Back to Homepage" class="content-form-a">Go Back to Homepage</a> 
-      <form method="post" action="/assets/php/make-an-appointment.php?v=11" name="form-maa" id="form-maa">
+      <form method="post" action="/assets/php/make-an-appointment.php?v=19" name="form-maa" id="form-maa">
         <label for="full_name">Please type your full name below:</label>
         <input type="text" placeholder="Type your first and last name" size="25" max-size="80" name="full_name" id="input-maa-full_name" required />
         <label for="phone_number">Please type your phone number below:</label>
@@ -93,8 +108,7 @@
         <input type="date" name="date" id="input-maa-date" required>
         <label for="time">Please select your appointment time:</label>
         <input type="time" name="time" min="07:00" max="18:00" id="input-maa-time" required>
-        <!-- <input type="reset" value="Clear Information" name="input-reset" class="action-a" id="input-contact-reset" /> -->
-        <input type="submit" value="Set Your Appointment" name="input-submit" class="action-a" id="input-maa-submit" />
+        <button class="g-recaptcha action-a" data-sitekey="6LdrO8sZAAAAAAN8Kaf29sQbT593t32WaktV-svf" data-callback='onSubmit' data-action='submit'>Set Your Appointment</button>
       </form>
     </div>
     <div id="maa-bkgrnd"></div>
@@ -102,7 +116,10 @@
     
 <!-- ADOBE FONTS REFERENCE -->
     <link rel="stylesheet" href="https://use.typekit.net/msj2vtz.css"> 
-        
+
+<!-- reCAPTCHA SCRIPT -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+           
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
@@ -112,6 +129,9 @@
     <script src="/assets/js/bootstrap.js"></script>
 
 <!-- Site JavaScript -->
-    <script src="/assets/js/main.js?v=11"></script>
+    <script src="/assets/js/main.js?v=19"></script>
+
+<!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8447635.js"></script>
   </body>
 </html>

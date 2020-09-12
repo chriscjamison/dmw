@@ -18,7 +18,7 @@ ul li,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 .content-form-a,
 #form-maa label,
 #input-maa-full_name,
@@ -49,7 +49,7 @@ ul li,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #form-maa label,
 #input-maa-full_name,
 #input-maa-phone_number,
@@ -150,7 +150,7 @@ h2 {
 #level_5-services-container a,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #input-maa-full_name,
 #input-maa-phone_number,
 #input-maa-date,
@@ -237,7 +237,7 @@ footer,
 
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea {
+#input-contact-message {
   border: 2px solid #98a0a5;
 }
 
@@ -460,7 +460,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
   margin: 10px 0 16px 0;
 }
 .carousel-item #cta-homepage p {
-  width: 521px;
+  width: 526px;
 }
 
 .carousel-control-prev,
@@ -697,7 +697,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
 }
 
 #level_6-img-container {
-  width: 47.6%;
+  width: 45.6%;
 }
 
 #level_6-img {
@@ -705,11 +705,11 @@ header #header-contact_info_container-aside .contact_info-content-a {
   margin: 0 auto;
   display: block;
   position: relative;
-  top: 23%;
+  top: 30%;
 }
 
 #level_6-content-background {
-  width: 54%;
+  width: 51%;
   height: auto;
   margin: 0 auto;
   padding: 11px 16px;
@@ -824,7 +824,7 @@ footer {
 
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #form-contact label,
 #input-maa-full_name,
 #input-maa-phone_number,
@@ -848,7 +848,7 @@ footer {
 
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #input-maa-full_name,
 #input-maa-phone_number,
 #input-maa-date,
@@ -862,6 +862,14 @@ footer {
 #maa-error_message p {
   padding: 0.25em 0;
   font-size: 1.15em;
+}
+
+#input-contact-message {
+  margin-bottom: 6px;
+}
+
+#input-maa-time {
+  margin-bottom: 10px;
 }
 
 /* ****** BREAKPOINTS ****** */
@@ -952,7 +960,7 @@ ul li,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #form-maa label,
 #input-maa-full_name,
 #input-maa-phone_number,
@@ -1058,7 +1066,7 @@ ul li,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #form-maa label,
 #input-maa-full_name,
 #input-maa-phone_number,
@@ -1306,7 +1314,7 @@ ul li,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #form-maa label,
 #input-maa-full_name,
 #input-maa-phone_number,
@@ -1750,7 +1758,7 @@ ul li {
 #form-maa,
 #input-contact-full_name,
 #input-contact-phone_number,
-#form-contact textarea,
+#input-contact-message,
 #form-contact label,
 #input-maa-full_name,
 #input-maa-phone_number,
@@ -1800,10 +1808,26 @@ ul li {
 #maa-bkgrnd {
     z-index: 200;
   }
+
+  #input-contact-message {
+    margin-bottom: 6px;
+  }
+
+  #form-contact > div > .grecaptcha-badge {
+    bottom: 73px !important;
+  }
+
+  #input-maa-time {
+    margin-bottom: 10px;
+  }
+
+  #form-maa > div > .grecaptcha-badge {
+    bottom: 84px !important;
+  }
 }
 /* ------ ANDROID ------- */
 @media screen and (width: 360px) {
-  #form-contact textarea {
+  #input-contact-message {
     height: 145px;
   }
 }
@@ -1815,7 +1839,7 @@ ul li {
     height: 603px;
   }
 
-  #form-contact textarea {
+  #input-contact-message {
     height: 172px;
   }
 
