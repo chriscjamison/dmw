@@ -12,7 +12,8 @@ h1,
 p,
 h2,
 ul li,
-#level_5-services-container a,
+span,
+#level-6-services-container a,
 #footer-copyright,
 .footer-links-a,
 #form-contact label,
@@ -34,7 +35,7 @@ ul li,
 .contact_info-content-span,
 .contact_info-content-a,
 .action-a,
-#level_5-services-container .level_5-service-div .action-a,
+#level-6-services-container .level-6-service-div .action-a,
 #footer-copyright,
 .footer-links-a,
 .content-form-a,
@@ -45,7 +46,7 @@ ul li,
 .nav-top-a,
 .content-p,
 ul li,
-#level_5-services-container a,
+#level-6-services-container a,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
@@ -54,7 +55,8 @@ ul li,
 #input-maa-full_name,
 #input-maa-phone_number,
 #input-maa-date,
-#input-maa-time {
+#input-maa-time,
+.level-3-customer-span {
   font-size: 1.33rem;
 }
 
@@ -88,6 +90,10 @@ h2 {
   font-weight: 700;
 }
 
+.level-3-customer-span {
+  font-style: italic;
+}
+
 .contact_info-content-a {
   letter-spacing: -0.6px;
 }
@@ -105,18 +111,24 @@ h2 {
   line-height: 1.6;
 }
 
+.nav-top-a {
+  color: #fff;
+}
+
 .nav-top-a,
 .action-a,
 .carousel-cta h1,
 .carousel-cta p,
-#level_2-p,
-.level_2-details-h2,
-.level_2-details-ul li,
-#level_5-services-container .level_5-service-div .action-a {
+#level-2-p,
+.level-2-details-h2,
+.level-2-details-ul li,
+#level-6-services-container .level-6-service-div .action-a {
   color: #f4f5f0;
 }
 
-#level_1-p,
+#level-1-p,
+.level-3-copy-container-div p,
+.level-3-customer-span,
 #footer-copyright,
 #form-contact label,
 #contact-confirmation_message p,
@@ -139,15 +151,17 @@ h2 {
 }
 
 .contact_info-listing-div,
-#level_3-content-container {
+#level-4-content-container {
   color: #2f3e55;
 }
 
-#level_4-content-container h2,
-#level_4-service_area_list,
-#level_5-content-background,
-#level_5-services-container,
-#level_5-services-container a,
+#level-3-container-home p,
+#level-3-container-home .level-3-customer-span,
+#level-5-content-container h2,
+#level-5-service_area_list,
+#level-6-content-background,
+#level-6-services-container,
+#level-6-services-container a,
 #input-contact-full_name,
 #input-contact-phone_number,
 #input-contact-message,
@@ -160,46 +174,49 @@ h2 {
 }
 
 /****** COLOR STYLING ******/
+.desktop-nav-visible {
+  background-color: #a5bcbb;
+}
+
 .nav-top-a {
   background-color: #579794;
 }
 
-/* 
- {
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(87,151,148,1) 100%)
-}
- */
 .action-a {
   background-color: #384883;
 }
 
-#level_1-p {
+#level-1-p,
+.level-2-service-overlay-div {
   background-color: #2b2c30;
 }
 
-#level_2-background-top {
+#level-2-background-top {
   background: #384883;
   background: linear-gradient(180deg, #384883 0%, #2f3e55 100%);
 }
 
-.level_2-service-overlay-div {
+.level-3-copy-container-div {
   background-color: #2b2c30;
 }
 
+#level-3-container-home .level-3-copy-container-div {
+  background-color: #98a0a5;
+}
+
 #header-contact_info_container-aside,
-#level_3-content-container,
-#homepage-section-5,
-#level_6-content-background {
+#level-4-content-container,
+#homepage-section-6,
+#level-7-content-background {
   background-color: #fff;
 }
 
-#level_5-content-background,
-#level_5-services-container {
+#level-6-content-background,
+#level-6-services-container {
   background-color: #f4f5f0;
 }
 
-#homepage-section-6 {
+#homepage-section-7 {
   background: white;
   background: linear-gradient(180deg, white 0%, #a5bcbb 23%, #a5bcbb 58%, #9f9c99 58%, #f4f5f0 100%);
 }
@@ -210,16 +227,20 @@ footer,
   background-color: #2b2c30;
 }
 
+.nav-top-a {
+  background: none;
+}
+
 /****** BORDERS ******/
 .nav-top-a,
 #header-contact_info_container-aside,
 .action-a,
 .content-p,
-#level_3-content-container,
-#level_4-map,
-#level_5-content-background,
-#level_5-services-container,
-#level_6-content-background {
+#level-4-content-container,
+#level-5-map,
+#level-6-content-background,
+#level-6-services-container,
+#level-7-content-background {
   border-radius: 10px;
 }
 
@@ -227,11 +248,19 @@ footer,
   border: 2px solid #f4f5f0;
 }
 
-#level_5-services-container li {
+#level-3-container-home .level-3-copy-container-div {
+  border-right: 1px solid #2b2c30;
+}
+
+#level-6-services-container li {
   border-bottom: 2px solid #98a0a5;
 }
 
-#level_5-services-container li:last-of-type {
+.desktop-nav-visible {
+  border-left: 2px solid #579794;
+}
+
+#level-6-services-container li:last-of-type {
   border-bottom: none;
 }
 
@@ -244,10 +273,10 @@ footer,
 /****** SHADOWS ******/
 #header-contact_info_container-aside,
 .action-a,
-#level_4-map,
-#level_5-content-background,
-#level_5-services-container,
-#level_6-content-background {
+#level-5-map,
+#level-6-content-background,
+#level-6-services-container,
+#level-7-content-background {
   box-shadow: 0 0 6px #2b2c30;
 }
 
@@ -263,15 +292,17 @@ footer,
 }
 
 .nav-top-a:hover {
-  background-color: #f4f5f0;
-  font-weight: 400;
-  color: #579794;
+  background-color: #579794;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-top-a:active {
   background-color: #f4f5f0;
   font-weight: 800;
   color: #579794;
+  text-decoration: none;
 }
 
 .action-a {
@@ -375,33 +406,35 @@ html {
   margin: 16px 0;
 }
 
-.level_2-button-not_visible,
-.level_2-button-visible {
+.level-2-button-not_visible,
+.level-2-button-visible {
   display: none !important;
 }
 
-.level_2-button-visible,
-.level_2-details-visible {
+.level-2-button-visible,
+.level-2-details-visible {
   display: block !important;
   opacity: 0;
 }
 
-.level_5-service-visible {
+.level-6-service-visible {
   display: block !important;
 }
 
 /******* HEADER ******/
 header {
+  width: calc(100% - 76px - 76px);
   position: absolute;
   top: 76px;
   left: 76px;
   z-index: 3;
 }
 header #header-contact_info_container-aside {
-  width: inherit;
-  margin: 20px 0 0 76px;
+  width: 255px;
   padding: 11px 16px;
   display: inline-flex;
+  position: absolute;
+  right: 76px;
   flex-direction: column;
   vertical-align: top;
 }
@@ -418,19 +451,33 @@ header #header-contact_info_container-aside .contact_info-content-a {
 }
 
 /****** NAVIGATION ******/
-#top-desktop-nav,
+.desktop-nav-visible {
+  width: 494px;
+  height: 930px;
+  padding: 54px;
+  position: absolute;
+  top: 0;
+  z-index: 200;
+}
+
+#top-desktop-nav {
+  position: fixed;
+  right: 76px;
+  z-index: 300;
+}
+
 #top-nav-logo-a,
-#top-nav-ul {
+#header-contact_info_container-aside {
   display: inline-flex;
 }
 
-#top-nav-logo-a {
-  margin-right: 36px;
-}
-
 #top-nav-ul {
-  margin: 20px 0 0 0;
-  padding: 0;
+  width: 316px;
+  padding-left: 0;
+  display: none;
+  position: absolute;
+  top: 26px;
+  right: 0;
   list-style-type: none;
   vertical-align: top;
 }
@@ -482,10 +529,10 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 /* --- LEVEL #1 --- */
 #homepage-section-1 {
-  background-image: url("/assets/img/homepage/desktop/level_1.jpg");
+  background-image: url("/assets/img/homepage/desktop/level-1.jpg");
 }
 
-#level_1-p {
+#level-1-p {
   width: 27%;
   padding: 11px 16px;
   position: relative;
@@ -494,108 +541,140 @@ header #header-contact_info_container-aside .contact_info-content-a {
 }
 
 /* --- LEVEL #2 --- */
-#level_2-background-top {
+#level-2-background-top {
   height: 50%;
   display: inline-flex;
 }
 
-#level_2-content-container,
-#level_2-icons-container {
+#level-2-content-container,
+#level-2-icons-container {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#level_2-p,
-#level_2-icons {
+#level-2-p,
+#level-2-icons {
   margin: 0 auto;
   position: relative;
 }
 
-#level_2-p {
+#level-2-p {
   width: 54%;
-  top: 36%;
 }
 
-#level_2-icons {
+#level-2-icons {
   width: 504px;
-  top: 21%;
 }
-#level_2-icons .level_2-icon-img {
+#level-2-icons .level-2-icon-img {
   width: 161px;
   height: auto;
 }
 
-#level_2-icon-auto {
+#level-2-icon-auto {
   vertical-align: text-bottom;
 }
 
-#level_2-icon-deck {
+#level-2-icon-deck {
   margin-left: 12px;
 }
 
-#level_2-background-bottom {
+#level-2-background-bottom {
   width: 100%;
   height: 50%;
   display: inline-flex;
 }
 
-.level_2-service-div {
+.level-2-service-div {
   width: 33.3%;
   height: 100%;
   display: flex;
   background-size: 100%;
   z-index: 200;
 }
-.level_2-service-div .action-a {
+.level-2-service-div .action-a {
   margin: 0 auto;
   align-self: center;
   z-index: 200;
 }
 
-.level_2-details-div {
+.level-2-details-div {
   width: 80%;
   margin: 50px auto 0 auto;
   display: none;
   z-index: 200;
 }
 
-.level_2-service-overlay-div {
+.level-2-service-overlay-div {
   width: 33.3%;
-  height: 37%;
+  height: 35%;
   position: absolute;
   opacity: 0.5;
 }
 
-#level_2-service-home_exterior_cleaning {
-  background-image: url("/assets/img/homepage/desktop/level_2-exterior.jpg");
+#level-2-service-home_exterior_cleaning {
+  background-image: url("/assets/img/homepage/desktop/level-2-exterior.jpg");
 }
 
-#level_2-service-auto_detailing {
-  background-image: url("/assets/img/homepage/desktop/level_2-auto.jpg");
+#level-2-service-auto_detailing {
+  background-image: url("/assets/img/homepage/desktop/level-2-auto.jpg");
 }
 
-#level_2-service-deck_cleaning {
-  background-image: url("/assets/img/homepage/desktop/level_2-deck.jpg");
+#level-2-service-deck_cleaning {
+  background-image: url("/assets/img/homepage/desktop/level-2-deck.jpg");
 }
 
 /* --- LEVEL #3 --- */
 #homepage-section-3 {
-  background-image: url("/assets/img/homepage/desktop/level_3.jpg");
+  height: 1625px;
 }
 
-#level_3-content-container {
+.level-3-container-div {
+  display: flex;
+}
+
+.level-3-img-container-div {
+  width: 56.9%;
+}
+
+.level-3-img {
+  width: 100%;
+}
+
+.level-3-copy-container-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.level-3-copy-container-div .content-p {
+  width: 54%;
+}
+
+.level-3-customer-span {
+  display: block;
+}
+
+/* --- LEVEL #4 --- */
+#homepage-section-4 {
+  background-image: url("/assets/img/homepage/desktop/level-4.jpg");
+}
+
+#level-4-content-container {
   width: 27%;
   position: relative;
   top: 15%;
   left: 59.3%;
   opacity: 0.8;
 }
-#level_3-content-container .content-p {
+#level-4-content-container .content-p {
   padding: 11px 16px;
 }
 
 /* 
 
-#level_3-img {
+#level-4-img {
   width: 53%;
   display: block;
   position: relative;
@@ -603,66 +682,66 @@ header #header-contact_info_container-aside .contact_info-content-a {
   left: 144px;
   z-index: 100;
 } */
-/* --- LEVEL #4 --- */
-#homepage-section-4 {
-  background-image: url("/assets/img/homepage/desktop/level_4.jpg");
+/* --- LEVEL #5 --- */
+#homepage-section-5 {
+  background-image: url("/assets/img/homepage/desktop/level-5.jpg");
   display: flex;
 }
 
-#level_4-content-container,
-#level_4-map {
+#level-5-content-container,
+#level-5-map {
   position: relative;
 }
 
-#level_4-content-container {
+#level-5-content-container {
   width: 50%;
   height: 85%;
   top: 15%;
 }
-#level_4-content-container h2 {
+#level-5-content-container h2 {
   width: 193px;
   margin: 0 auto 10px auto;
 }
-#level_4-content-container ul {
-  width: 196px;
+#level-5-content-container ul {
+  width: 197px;
   margin: 0 auto;
 }
-#level_4-content-container ul li {
+#level-5-content-container ul li {
   margin-bottom: 10px;
 }
 
-#level_4-map {
+#level-5-map {
   width: 27%;
   height: 433px;
   top: 15%;
   left: 9.1%;
 }
 
-/* --- LEVEL #5 --- */
-#homepage-section-5 {
+/* --- LEVEL #6 --- */
+#homepage-section-6 {
   display: inline-flex;
-  background-image: url("/assets/img/homepage/desktop/level_5.png");
+  background-image: url("/assets/img/homepage/desktop/level-6.png");
   background-position: 0 50%;
   background-size: 40%;
   background-repeat: repeat-x;
 }
 
-#level_5-content-container {
+#level-6-content-container {
   width: 50%;
 }
 
-#level_5-content-background {
+#level-6-content-background {
   width: 54%;
   height: fit-content;
   margin: 0 auto;
   position: relative;
   top: 15%;
 }
-#level_5-content-background .content-p {
+#level-6-content-background .content-p {
   padding: 11px 16px;
 }
 
-#level_5-services-container {
+#level-6-services-container {
   width: 27%;
   height: fit-content;
   padding: 11px 16px;
@@ -670,37 +749,37 @@ header #header-contact_info_container-aside .contact_info-content-a {
   top: 15%;
   left: 9.1%;
 }
-#level_5-services-container li {
+#level-6-services-container li {
   list-style-image: url("/assets/img/common/dots/services.png");
   margin-bottom: 10px;
 }
-#level_5-services-container li a {
+#level-6-services-container li a {
   position: relative;
   top: -8px;
 }
 
-#level_5-services-list {
+#level-6-services-list {
   width: 96%;
 }
 
-.level_5-service-div {
+.level-6-service-div {
   display: none;
   margin-bottom: 16px;
 }
-.level_5-service-div p {
+.level-6-service-div p {
   margin-bottom: 26px;
 }
 
-/* --- LEVEL #6 --- */
-#homepage-section-6 {
+/* --- LEVEL #7 --- */
+#homepage-section-7 {
   display: inline-flex;
 }
 
-#level_6-img-container {
+#level-7-img-container {
   width: 45.6%;
 }
 
-#level_6-img {
+#level-7-img {
   width: 80%;
   margin: 0 auto;
   display: block;
@@ -708,7 +787,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
   top: 30%;
 }
 
-#level_6-content-background {
+#level-7-content-background {
   width: 51%;
   height: auto;
   margin: 0 auto;
@@ -881,64 +960,8 @@ footer {
   }
 
   #homepage-section-2,
-#homepage-section-6 {
+#homepage-section-7 {
     height: 657px;
-  }
-}
-/* ------ > MOBILE DISPLAYS && < 1080P ------- */
-@media screen and (min-width: 415px) and (max-width: 1900px) {
-  /****** TYPOGRAPHIC ELEMENTS ******/
-  .nav-top-a {
-    background: none;
-    color: #fff;
-  }
-
-  /****** LINK/BUTTON BEHAVIOR ******/
-  .nav-top-a:hover {
-    background-color: #579794;
-    font-weight: 800;
-    color: #fff;
-  }
-
-  /****** COLOR STYLING ******/
-  /****** COMMON ELEMENTS ******/
-  .visible-tablet {
-    display: block !important;
-  }
-
-  /****** TABLET NAVIGATION ******/
-  .tablet-nav-visible {
-    width: 440px;
-    height: 930px;
-    position: absolute;
-    top: -76px;
-    right: -76px;
-    background-color: #a5bcbb;
-    z-index: 200;
-  }
-
-  #top-tablet-nav {
-    position: absolute;
-    top: 38px;
-    right: 76px;
-    z-index: 300;
-  }
-
-  #top-nav-ul {
-    width: 314px;
-    display: none;
-    position: absolute;
-    top: 138px;
-    right: 54px;
-  }
-
-  header {
-    width: calc(100% - 76px - 76px);
-  }
-  header #header-contact_info_container-aside {
-    width: 255px;
-    position: absolute;
-    right: 162px;
   }
 }
 /* ------ > MOBILE DISPLAYS && < 1080P ------- */
@@ -956,7 +979,7 @@ h2 {
   .nav-top-a,
 .content-p,
 ul li,
-#level_5-services-container a,
+#level-6-services-container a,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
@@ -969,7 +992,7 @@ ul li,
 .contact_info-content-span,
 .contact_info-content-a,
 .action-a,
-#level_5-services-container .level_5-service-div .action-a,
+#level-6-services-container .level-6-service-div .action-a,
 #footer-copyright,
 .footer-links-a,
 .content-form-a,
@@ -995,7 +1018,7 @@ ul li,
   }
 
   /* --- LEVEL #1 --- */
-  #level_1-p {
+  #level-1-p {
     top: 15%;
   }
 
@@ -1004,27 +1027,27 @@ ul li,
     height: 437px;
   }
 
-  #level_2-p {
+  #level-2-p {
     top: 21%;
   }
 
-  #level_2-icons {
+  #level-2-icons {
     width: 294px;
   }
-  #level_2-icons .level_2-icon-img {
+  #level-2-icons .level-2-icon-img {
     width: 91px;
   }
 
-  .level_2-details-div {
+  .level-2-details-div {
     margin: 20px auto 0 auto;
   }
 
-  .level_2-service-overlay-div {
+  .level-2-service-overlay-div {
     height: 24%;
   }
 
-  /* --- LEVEL #6 --- */
-  #level_6-img {
+  /* --- LEVEL #7 --- */
+  #level-7-img {
     top: 40%;
   }
 
@@ -1035,7 +1058,7 @@ ul li,
 }
 /* ------ > TABLET < 720P ------- */
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
-  .level_2-service-overlay-div {
+  .level-2-service-overlay-div {
     height: 24.3%;
   }
 }
@@ -1051,7 +1074,7 @@ h2 {
 .contact_info-content-span,
 .contact_info-content-a,
 .action-a,
-#level_5-services-container .level_5-service-div .action-a,
+#level-6-services-container .level-6-service-div .action-a,
 #footer-copyright,
 .footer-links-a,
 .content-form-a,
@@ -1062,7 +1085,7 @@ h2 {
   .nav-top-a,
 .content-p,
 ul li,
-#level_5-services-container a,
+#level-6-services-container a,
 #form-contact label,
 #input-contact-full_name,
 #input-contact-phone_number,
@@ -1075,7 +1098,7 @@ ul li,
 .contact_info-content-span,
 .contact_info-content-a,
 .action-a,
-#level_5-services-container .level_5-service-div .action-a,
+#level-6-services-container .level-6-service-div .action-a,
 #footer-copyright,
 .footer-links-a,
 .content-form-a,
@@ -1113,8 +1136,8 @@ ul li,
     height: 458px;
   }
 
-  /* --- LEVEL #4 --- */
-  #level_4-map {
+  /* --- LEVEL #5 --- */
+  #level-5-map {
     height: 272px;
   }
 
@@ -1174,14 +1197,14 @@ ul li,
     height: 350px;
   }
 
-  #level_1-p,
-#level_3-content-container,
-#level_4-map,
-#level_5-services-container {
+  #level-1-p,
+#level-4-content-container,
+#level-5-map,
+#level-6-services-container {
     width: 37%;
   }
 
-  #level_1-p {
+  #level-1-p {
     top: 1%;
   }
 
@@ -1190,71 +1213,71 @@ ul li,
     height: 1445px;
   }
 
-  #level_2-background-top {
+  #level-2-background-top {
     height: 250px;
   }
 
-  #level_2-p,
-#level_5-content-background {
+  #level-2-p,
+#level-6-content-background {
     width: 66%;
   }
 
-  #level_2-background-bottom {
+  #level-2-background-bottom {
     height: 1207px;
     display: block;
   }
 
-  .level_2-service-div {
+  .level-2-service-div {
     width: 100%;
     height: 33%;
     background-repeat: no-repeat;
   }
 
-  .level_2-details-div {
+  .level-2-details-div {
     width: 50%;
     margin: 13% auto 0 auto;
   }
 
-  .level_2-service-overlay-div {
+  .level-2-service-overlay-div {
     width: 100%;
     height: 38.9%;
   }
 
-  /* --- LEVEL #3 --- */
-  #homepage-section-3 {
+  /* --- LEVEL #4 --- */
+  #homepage-section-4 {
     height: 350px;
   }
 
-  #level_3-content-container {
+  #level-4-content-container {
     top: 5%;
   }
 
-  /* --- LEVEL #4 ---- */
-  #homepage-section-4 {
-    height: 397px;
-  }
-
-  /* --- LEVEL #5 --- */
+  /* --- LEVEL #5 ---- */
   #homepage-section-5 {
-    height: 860px;
+    height: 397px;
   }
 
   /* --- LEVEL #6 --- */
   #homepage-section-6 {
+    height: 860px;
+  }
+
+  /* --- LEVEL #7 --- */
+  #homepage-section-7 {
     height: 380px;
   }
 
-  #level_6-img-container {
+  #level-7-img-container {
     width: 100%;
   }
 
-  #level_6-img {
+  #level-7-img {
     width: 90%;
     top: 47%;
     left: 26px;
   }
 
-  #level_6-content-background {
+  #level-7-content-background {
     width: 82%;
     top: 5%;
   }
@@ -1276,12 +1299,12 @@ ul li,
     height: 355px;
   }
 
-  #level_2-p,
-#level_2-icons {
+  #level-2-p,
+#level-2-icons {
     top: 13%;
   }
 
-  .level_2-service-overlay-div {
+  .level-2-service-overlay-div {
     height: 13%;
   }
 }
@@ -1289,7 +1312,7 @@ ul li,
 @media screen and (width: 800px) {
   /****** COPY ******/
   /* --- LEVEL #2 --- */
-  .level_2-service-overlay-div {
+  .level-2-service-overlay-div {
     height: 31.1%;
   }
 }
@@ -1300,15 +1323,15 @@ ul li,
     font-size: 2.08rem;
   }
 
-  #level_4-content-container h2 {
+  #level-5-content-container h2 {
     font-size: 1.33rem;
   }
 
   .carousel-item #cta-homepage p,
 .content-p,
 ul li,
-.level_2-details-h2,
-#level_5-services-container a,
+.level-2-details-h2,
+#level-6-services-container a,
 .mobile-contactinfo-item-span,
 #nav-mobile-contactinfo-phonenumber .nav-mobile-a,
 #form-contact label,
@@ -1323,24 +1346,24 @@ ul li,
     font-size: 1.1rem;
   }
 
-  .level_2-details-ul li {
+  .level-2-details-ul li {
     font-size: 0.9rem;
   }
 
   .action-a,
-#level_5-services-container .level_5-service-div .action-a {
+#level-6-services-container .level-6-service-div .action-a {
     font-size: 0.8rem;
   }
 
-  #level_1-p,
-#level_3-content-container .content-p,
-#level_4-content-container h2,
+  #level-1-p,
+#level-4-content-container .content-p,
+#level-5-content-container h2,
 ul li {
     color: #2b2c30;
   }
 
-  .level_2-details-h2,
-.level_2-details-ul li {
+  .level-2-details-h2,
+.level-2-details-ul li {
     color: #f4f5f0;
   }
 
@@ -1351,21 +1374,21 @@ ul li {
 
   .carousel,
 #mobile-menu,
-#level_1-p,
-#level_3-content-container,
-#homepage-section-4,
+#level-1-p,
+#level-4-content-container,
 #homepage-section-5,
-#level_6-content-background {
+#homepage-section-6,
+#level-7-content-background {
     background-color: #f4f5f0;
   }
 
-  #level_5-services-container,
-#level_5-content-container,
-#homepage-section-6 {
+  #level-6-services-container,
+#level-6-content-container,
+#homepage-section-7 {
     background-color: unset;
   }
 
-  #level_6-img-container {
+  #level-7-img-container {
     background: #f4f5f0;
     background: linear-gradient(180deg, #f4f5f0 0%, #a5bcbb 15%, #a5bcbb 68%, #9f9c99 68%, #f4f5f0 100%);
   }
@@ -1376,9 +1399,9 @@ ul li {
 
   /****** BORDERS ******/
   .content-p,
-#level_3-content-container,
-#level_4-map,
-#level_6-content-background {
+#level-4-content-container,
+#level-5-map,
+#level-7-content-background {
     border-radius: 0;
   }
 
@@ -1391,10 +1414,10 @@ ul li {
   }
 
   /****** SHADOWS ******/
-  #level_4-map,
-#level_5-services-container,
-#level_5-content-background,
-#level_6-content-background {
+  #level-5-map,
+#level-6-services-container,
+#level-6-content-background,
+#level-7-content-background {
     box-shadow: none;
   }
 
@@ -1536,7 +1559,7 @@ ul li {
     background-position: 0 432px;
   }
 
-  #level_1-p {
+  #level-1-p {
     width: 100%;
     height: 71.5%;
     margin-bottom: 0;
@@ -1546,124 +1569,124 @@ ul li {
   }
 
   /* --- LEVEL #2 --- */
-  #level_2-background-top {
+  #level-2-background-top {
     height: 100%;
     display: block;
   }
 
-  #level_2-content-container,
-#level_2-icons-container {
+  #level-2-content-container,
+#level-2-icons-container {
     width: 100%;
   }
 
-  #level_2-p {
+  #level-2-p {
     width: 100%;
     padding: 20px 26px;
     top: 0;
   }
 
-  #level_2-icons {
+  #level-2-icons {
     width: 100%;
     display: flex;
     flex-direction: column;
     top: 0;
   }
-  #level_2-icons .level_2-icon-img {
+  #level-2-icons .level-2-icon-img {
     width: 144px;
     margin: 0 auto 42px auto;
     display: block;
   }
 
-  #level_2-background-bottom {
+  #level-2-background-bottom {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  .level_2-service-div {
+  .level-2-service-div {
     width: 100%;
     height: 187px;
     display: block;
     position: relative;
     background-size: 100%;
   }
-  .level_2-service-div .action-a {
+  .level-2-service-div .action-a {
     position: absolute;
     top: 60px;
     left: calc(50% - 77px);
     z-index: 300;
   }
 
-  .level_2-details-div {
+  .level-2-details-div {
     width: 100%;
     margin: 0;
     padding: 26px;
     position: relative;
   }
 
-  .level_2-service-overlay-div {
+  .level-2-service-overlay-div {
     width: 100%;
     height: 187px;
     top: 0;
   }
 
-  /* --- LEVEL #3 --- */
-  #homepage-section-3 {
+  /* --- LEVEL #4 --- */
+  #homepage-section-4 {
     height: 571px;
     background-position-y: 22%;
     background-size: 152%;
   }
 
-  #level_3-content-container {
+  #level-4-content-container {
     width: 100%;
     top: 0;
     left: 0;
     opacity: 1;
   }
-  #level_3-content-container .content-p {
+  #level-4-content-container .content-p {
     padding: 11px 26px 0 26px;
   }
-  #level_3-content-container .content-p:first-of-type {
+  #level-4-content-container .content-p:first-of-type {
     padding: 20px 26px 0 26px;
   }
-  #level_3-content-container .content-p:last-of-type {
+  #level-4-content-container .content-p:last-of-type {
     padding: 11px 26px 20px 26px;
   }
 
-  /* --- LEVEL #4 --- */
-  #homepage-section-4 {
+  /* --- LEVEL #5 --- */
+  #homepage-section-5 {
     display: block;
     background-image: none;
   }
 
-  #level_4-content-container {
+  #level-5-content-container {
     width: 100%;
     height: 100%;
     padding: 20px 26px;
     top: 0;
   }
-  #level_4-content-container h2 {
+  #level-5-content-container h2 {
     margin: 0 0 10px 0;
   }
-  #level_4-content-container ul {
+  #level-5-content-container ul {
     margin: 0;
   }
 
-  #level_4-map {
+  #level-5-map {
     width: 100%;
     height: 360px;
     top: 0;
     left: 0;
   }
 
-  /* --- LEVEL #5 --- */
-  #homepage-section-5 {
+  /* --- LEVEL #6 --- */
+  #homepage-section-6 {
     display: flex;
     flex-direction: column-reverse;
     background-image: none;
   }
 
-  #level_5-services-container {
+  #level-6-services-container {
     width: 100%;
     height: auto;
     padding: 20px 26px 0 26px;
@@ -1671,55 +1694,55 @@ ul li {
     left: 0;
   }
 
-  #level_5-services-list {
+  #level-6-services-list {
     margin-bottom: 0;
   }
 
-  #level_5-content-container {
+  #level-6-content-container {
     width: 100%;
   }
 
-  #level_5-content-background {
+  #level-6-content-background {
     width: 100%;
     height: auto;
     margin: 0;
     top: 0;
   }
-  #level_5-content-background .content-p {
+  #level-6-content-background .content-p {
     padding: 11px 26px 0 26px;
   }
-  #level_5-content-background .content-p:last-of-type {
+  #level-6-content-background .content-p:last-of-type {
     padding: 11px 26px 10px 26px;
   }
 
-  /* --- LEVEL #6 --- */
-  #homepage-section-6 {
+  /* --- LEVEL #7 --- */
+  #homepage-section-7 {
     display: block;
   }
 
-  #level_6-img-container {
+  #level-7-img-container {
     width: 100%;
     height: 290px;
   }
 
-  #level_6-img {
+  #level-7-img {
     width: 100%;
     margin: 0;
     padding: 0 26px;
     top: 110px;
   }
 
-  #level_6-content-background {
+  #level-7-content-background {
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
     top: 0;
   }
-  #level_6-content-background .content-p {
+  #level-7-content-background .content-p {
     padding: 11px 26px 0 26px;
   }
-  #level_6-content-background .content-p:last-of-type {
+  #level-7-content-background .content-p:last-of-type {
     margin-bottom: 0;
     padding: 11px 26px 20px 26px;
   }
@@ -1843,8 +1866,8 @@ ul li {
     height: 172px;
   }
 
-  /* --- LEVEL #3 --- */
-  #homepage-section-3 {
+  /* --- LEVEL #4 --- */
+  #homepage-section-4 {
     height: 590px;
     background-position-y: 70px;
   }
@@ -1869,18 +1892,18 @@ ul li {
     height: 621px;
   }
 
-  #level_1-p {
+  #level-1-p {
     height: 431px;
   }
 
-  /* --- LEVEL #3 --- */
-  #homepage-section-3 {
+  /* --- LEVEL #4 --- */
+  #homepage-section-4 {
     height: 605px;
     background-position-y: 30px;
   }
 
-  /* --- LEVEL #6 --- */
-  #level_6-img {
+  /* --- LEVEL #7 --- */
+  #level-7-img {
     top: 95px;
   }
 }

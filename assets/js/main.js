@@ -6,7 +6,7 @@
 var details_buttons_selector = "";
 
 // The CSS selector for the buttons housed in Level #2 is passed on.
-details_buttons_selector = ".level_2-a";
+details_buttons_selector = ".level-2-a";
 
 $(details_buttons_selector).mouseover(
   function () {
@@ -75,7 +75,7 @@ $(details_buttons_selector).click(
 var content_selector = "";
 
 // The CSS selector that refers to the details visible in Level #2 is passed on.
-content_selector = ".level_2-details-div";
+content_selector = ".level-2-details-div";
 
 $(content_selector).mouseleave(
   function () {
@@ -204,14 +204,14 @@ $(message_selector).click(
 
 
 
-// CSS selectors that refer to the main tablet navigation links 
+// CSS selectors that refer to the main desktop navigation links 
 // are passed on.
 
 var links_selector = ".nav-top-a";
 
 $(links_selector).click(
   function () {
-    toggleTabletMenu();
+    toggleDesktopMenu();
   }
 );
 
@@ -281,18 +281,18 @@ function showLevel2Content(block_selector_value) {
   
   // A String variable is initialized that will hold the CSS selector for the 
   // button the visitor is interacting with.
-  var button_selector = "#level_2-service-a-" + block_selector_value;
+  var button_selector = "#level-2-service-a-" + block_selector_value;
   // A String variable is initialized that will hold the CSS selector for the 
   // block of content the visitor is interacting with.
-  var content_selector = "#level_2-detail-" + block_selector_value;
+  var content_selector = "#level-2-detail-" + block_selector_value;
 
   // A String variable is initialized that will contain CSS class 
   // that will trigger the browser to hide the button.
-  var button_not_visible_class = "level_2-button-not_visible";
+  var button_not_visible_class = "level-2-button-not_visible";
 
   // A String variable is initialized that will contain CSS class that 
   // will be removed from the button.
-  var button_visible_class = "level_2-button-visible";
+  var button_visible_class = "level-2-button-visible";
 
   // The button is hidden from view.
   $(button_selector).fadeTo(200, 0);
@@ -302,11 +302,11 @@ function showLevel2Content(block_selector_value) {
   // A String variable is initialized that will contain CSS class 
   // that will be removed from the HTML element containing the content 
   // the visitor is interacting with.
-  var content_not_visible_class = "level_2-details-not_visible";
+  var content_not_visible_class = "level-2-details-not_visible";
 
   // A String variable is initialized that will contain the CSS class 
   // that will trigger the browser to show the content.
-  var content_visible_class = "level_2-details-visible";
+  var content_visible_class = "level-2-details-visible";
 
   // The content is made visible.
   $(content_selector).removeClass(content_not_visible_class);
@@ -333,16 +333,16 @@ function showLevel2Buttons(block_selector_value) {
   
   // A String variable is initialized that will hold the CSS selector for the 
   // block of content the visitor is interacting with.
-  var content_selector = "#level_2-detail-" + block_selector_value;
+  var content_selector = "#level-2-detail-" + block_selector_value;
   
   // A String variable is initialized that will contain CSS class 
   // that will be removed from the HTML element containing the content 
   // the visitor is interacting with.
-  var content_not_visible_class = "level_2-details-not_visible";
+  var content_not_visible_class = "level-2-details-not_visible";
 
   // A String variable is initialized that will contain the CSS class 
   // that will trigger the browser to show the content.
-  var content_visible_class = "level_2-details-visible";
+  var content_visible_class = "level-2-details-visible";
 
   // A Boolean variable that serves as a flag that refers to the presence 
   // of a CSS class within the HTML element holding the content 
@@ -360,15 +360,15 @@ function showLevel2Buttons(block_selector_value) {
 
     // A String variable is initialized that will hold the CSS selector for the 
     // button the visitor is interacting with.
-    var button_selector = "#level_2-service-a-" + block_selector_value;
+    var button_selector = "#level-2-service-a-" + block_selector_value;
 
     // A String variable is initialized that will contain CSS class 
     // that will trigger the browser to hide the button.
-    var button_not_visible_class = "level_2-button-not_visible";
+    var button_not_visible_class = "level-2-button-not_visible";
 
     // A String variable is initialized that will contain CSS class that 
     // will be removed from the button.
-    var button_visible_class = "level_2-button-visible";
+    var button_visible_class = "level-2-button-visible";
 
     // The button is made visible.
     $(button_selector).removeClass(button_not_visible_class);
@@ -383,7 +383,7 @@ function showLevel2Buttons(block_selector_value) {
 
 
 
-function showLevel5Content(block_selector_value) {
+function showLevel6Content(block_selector_value) {
   /* @PARAMS **********************************************
    * 
    *  Variable:
@@ -397,12 +397,12 @@ function showLevel5Content(block_selector_value) {
   // A String variable is initialized that will hold the CSS 
   // selector that refers to the blocks on content within Level #5 
   // the visitor is interacting with.
-  var all_content_selector = ".level_5-service-div";
+  var all_content_selector = ".level-5-service-div";
 
   // A String variable is initialized that will hold the CSS class 
   // that triggers the visibility of the content the visitor 
   // is interacting with.
-  var content_visible_class = "level_5-service-visible";
+  var content_visible_class = "level-6-service-visible";
 
   // The blocks of content within Level #5 the visitor is interacting with 
   // are all hidden from view.
@@ -410,7 +410,7 @@ function showLevel5Content(block_selector_value) {
 
   // A String variable is initialized that will hold the CSS 
   // selector that refers to the link the visitor is interacting with.
-  var content_selector = "#level_5-service-" + block_selector_value;
+  var content_selector = "#level-5-service-" + block_selector_value;
 
   // A String variable is initialized that will hold the CSS selector 
   // that refers to the <section>'s within the webpage.
@@ -960,23 +960,22 @@ function displayMobileMenu() {
 
 
 
-function toggleTabletMenu() {
+function toggleDesktopMenu() {
   /* @params ********************************************************
-     Name:      displayTabletMenu
+     Name:      toggleDesktopMenu
 
-     Purpose:   Toggle the visibility of tablet menu. 
+     Purpose:   Toggle the visibility of desktop menu. 
   
   **************************************************************** */
-
   var menu_icon_selector = "";
 
-  menu_icon_img_selector = "#top-tablet-nav-icon";
+  menu_icon_img_selector = "#top-desktop-nav-icon";
 
   var menu_icon_source = $(menu_icon_img_selector).attr("src");
 
-  var search_string = "/menu-tablet.png";
+  var search_string = "/menu-desktop.png";
 
-  var menu_icon_selector = "#top-tablet-nav";
+  var menu_icon_selector = "#top-desktop-nav";
   var logo_selector = "#top-nav-logo-a";
   var aside_selector = "#header-contact_info_container-aside";
   var main_menu_selector = "#top-nav-ul";
@@ -984,100 +983,92 @@ function toggleTabletMenu() {
   var menu_background_selector = "#top-desktop-nav";
   var html_selector = "html";
 
-  var tablet_menu_visible_class = "tablet-nav-visible";
+  var desktop_menu_visible_class = "desktop-nav-visible";
 
   var menu_icon_css = {};
   var logo_and_aside_css = {};
-  var html_css = {};
   var main_content_half_visible_css = {};
 
   var window_width = $(window).width();
 
-  if (window_width > 415 && window_width < 1900)  {
-    if (menu_icon_source.indexOf(search_string) > -1) {
-      menu_icon_css = {
-        right: "302px"
-      };
-  
-      $(menu_icon_selector).css(menu_icon_css);
-      $(menu_icon_img_selector).attr("src", "/assets/img/common/menu/menu-tablet-close.png");
-  
-      logo_and_aside_css = {
-        display: "none"
-      };
-  
-      $(logo_selector).css(logo_and_aside_css);
+  if (menu_icon_source.indexOf(search_string) > -1) {
+    menu_icon_css = {
+      right: "0"
+    };
 
-      if (window_width >= 800) {
-        $(aside_selector).css(logo_and_aside_css);
-      }
-      
-      $(menu_background_selector).toggleClass(tablet_menu_visible_class);
-      $(main_menu_selector).fadeIn(400);
-  
-      main_content_half_visible_css = { 
-        opacity: 0.5
-      };
-  
-      $(main_content_selector).animate(main_content_half_visible_css);
-      
-  
-    } else {
-      if (window_width >= 800 && window_width <= 1024) {
-        menu_icon_css = {
-          right: "26px"
-        };
-      } else if (window_width > 800 && window_width <= 1900) {
-        menu_icon_css = {
-          right: "76px"
-        };
-      } else if (window_width > 414 && window_width <= 800) {
-        menu_icon_css = {
-          right: "0"
-        };
-      }
-  
-      $(menu_icon_selector).css(menu_icon_css);
-      $(menu_icon_img_selector).attr("src", "/assets/img/common/menu/menu-tablet.png");
-  
-      $(menu_background_selector).toggleClass(tablet_menu_visible_class);
-      
-      logo_and_aside_css = {
-        display: "inline-flex"
-      };
+    $(menu_icon_selector).css(menu_icon_css);
+    $(menu_icon_img_selector).attr("src", "/assets/img/common/menu/menu-desktop-close.png");
 
-      setTimeout(
-        function () {
-          $(logo_selector).css(logo_and_aside_css);
-        }, 250
-      );
+    logo_and_aside_css = {
+      display: "none"
+    };
 
-      if (window_width >= 800)  {
-        setTimeout(
-          function () {
-            $(aside_selector).css(logo_and_aside_css);
-          }, 250
-        );  
-      }
-      
-      $(main_menu_selector).fadeOut(300);
-  
-      main_content_half_visible_css = {
-        opacity: 1
-      };
-  
-      $(main_content_selector).animate(main_content_half_visible_css);
+    $(logo_selector).css(logo_and_aside_css);
+
+    if (window_width >= 800) {
+      $(aside_selector).css(logo_and_aside_css);
     }
     
-    var html_class_name = "";
-  
-    html_class_name = "overflow-hidden-html";
-  
+    $(menu_background_selector).toggleClass(desktop_menu_visible_class);
+    $(main_menu_selector).fadeIn(400);
+
+    main_content_half_visible_css = { 
+      opacity: 0.5
+    };
+
+    $(main_content_selector).animate(main_content_half_visible_css);
+  } else {
+    if (window_width > 1024) {
+      menu_icon_css = {
+        right: "76px"
+      };
+    } else if (window_width >= 800 && window_width <= 1024) {
+      menu_icon_css = {
+        right: "26px"
+      };
+    } else if (window_width > 414 && window_width <= 800) {
+      menu_icon_css = {
+        right: "0"
+      };
+    }
+
+    $(menu_icon_selector).css(menu_icon_css);
+    $(menu_icon_img_selector).attr("src", "/assets/img/common/menu/menu-desktop.png");
+
+    $(menu_background_selector).toggleClass(desktop_menu_visible_class);
     
-  
-    $(html_selector).toggleClass(html_class_name);
-  
+    logo_and_aside_css = {
+      display: "inline-flex"
+    };
+
+    setTimeout(
+      function () {
+        $(logo_selector).css(logo_and_aside_css);
+      }, 250
+    );
+
+    if (window_width >= 800)  {
+      setTimeout(
+        function () {
+          $(aside_selector).css(logo_and_aside_css);
+        }, 250
+      );  
+    }
+    
+    $(main_menu_selector).fadeOut(300);
+
+    main_content_half_visible_css = {
+      opacity: 1
+    };
+
+    $(main_content_selector).animate(main_content_half_visible_css);  
   }
+    
+  var html_class_name = "";
+  
+  html_class_name = "overflow-hidden-html";
+
+  $(html_selector).toggleClass(html_class_name);
 } // END of displayMobileMenu 
 
 

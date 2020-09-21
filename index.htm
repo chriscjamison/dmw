@@ -22,15 +22,18 @@
     <header>
 
 <!-- DESKTOP MAIN NAVIGATION -->
-      <a href="javascript:toggleTabletMenu();" class="visible-tablet" id="top-tablet-nav"><img src="/assets/img/common/menu/menu-tablet.png" id="top-tablet-nav-icon"></a>
-      <nav class="visible-desktop-inlineflex" id="top-desktop-nav">
-        <a href="/" title="Home" id="top-nav-logo-a"><img src="/assets/img/common/logo/logo.png" alt="Dallas Mobile Wash - Home" id="nav-logo-desktop"></a>
+      <a href="/" title="Home" id="top-nav-logo-a"><img src="/assets/img/common/logo/logo.png" alt="Dallas Mobile Wash - Home" id="nav-logo-desktop"></a>
+      <a href="javascript:toggleDesktopMenu();" id="top-desktop-nav"><img src="/assets/img/common/menu/menu-desktop.png" id="top-desktop-nav-icon"></a>
+      <nav class="visible-desktop-fixed" id="top-desktop-nav">
         <ul id="top-nav-ul">
           <li>
             <a href="#mobile-wash-appeal" title="Mobile Wash Appeal" class="nav-top-a" id="nav-a-mwa">Mobile Wash Appeal</a>
           </li>
           <li>
             <a href="#services" title="Services" class="nav-top-a" id="nav-a-services">Services</a>
+          </li>
+          <li>
+            <a href="#testimonials" title="Testimonials" class="nav-top-a" id="nav-a-test">Testimonials</a>
           </li>
           <li>
             <a href="#about-dallas-mobile-wash" title="About Dallas Mobile Wash" class="nav-top-a" id="nav-a-admw">About Dallas Mobile Wash</a>
@@ -43,7 +46,7 @@
           </li>
         </ul>
       </nav>
-      <aside class="visible-desktop-inlineflex" id="header-contact_info_container-aside">
+      <aside id="header-contact_info_container-aside">
         <div class="contact_info-listing-div" id="listing-phone_number">
           <span class="contact_info-heading-span">Phone Number:</span>
           <span class="contact_info-content-span">314-262-2641</span>
@@ -130,7 +133,7 @@
     <main class="container">
       <a id="mobile-wash-appeal"></a>
       <section class="homepage-section" id="homepage-section-1">
-        <p class="content-p" id="level_1-p">
+        <p class="content-p" id="level-1-p">
           Dallas Mobile Wash is a St. Louis based home and auto cleaning service that comes to you, 
           whether you are at home or out-and-about, to wash your home&rsquo;s exterior or 
           detail your automobile. We use a high-pressure water system to remove dirt, mold, and any other grime keeping your 
@@ -140,67 +143,108 @@
       </section>
       <section class="homepage-section" id="homepage-section-2">
         <a id="services"></a>
-        <div class="level_2-background-div" id="level_2-background-top">
-          <div id="level_2-content-container">
-            <p class="content-p" id="level_2-p">
+        <div class="level-2-background-div" id="level-2-background-top">
+          <div id="level-2-content-container">
+            <p class="content-p" id="level-2-p">
               We offer car detailing done at your home or place of business.
               We also provide thorough power cleanings of the siding 
               and brick of your home, sidewalks, driveways, fences, hard surfaces, and more. 
             </p>
           </div>
-          <div id="level_2-icons-container">
-            <div id="level_2-icons">
-              <img src="/assets/img/homepage/common/level_2-icon-home.png" alt="Home Exterior Power Washing" class="level_2-icon-img" id="level_2-icon-home">
-              <img src="/assets/img/homepage/common/level_2-icon-auto.png" alt="Auto Detailing" class="level_2-icon-img" id="level_2-icon-auto">
-              <img src="/assets/img/homepage/common/level_2-icon-deck.png" alt="Deck Power Washign and Staining" class="level_2-icon-img" id="level_2-icon-deck">
+          <div id="level-2-icons-container">
+            <div id="level-2-icons">
+              <img src="/assets/img/homepage/common/level-2-icon-home.png" alt="Home Exterior Power Washing" class="level-2-icon-img" id="level-2-icon-home">
+              <img src="/assets/img/homepage/common/level-2-icon-auto.png" alt="Auto Detailing" class="level-2-icon-img" id="level-2-icon-auto">
+              <img src="/assets/img/homepage/common/level-2-icon-deck.png" alt="Deck Power Washign and Staining" class="level-2-icon-img" id="level-2-icon-deck">
             </div>
           </div>
         </div>
-        <div class="level_2-background-div" id="level_2-background-bottom">
-          <div class="level_2-service-div" id="level_2-service-home_exterior_cleaning">
-            <a href="#" title="View Details about Home Exterior Washing" class="action-a level_2-a" id="level_2-service-a-home_exterior_cleaning">View Details about Home Exterior Washing</a>
-            <div class="level_2-details-div" id="level_2-detail-home_exterior_cleaning">
-              <h2 class="level_2-details-h2">Details about Home Exterior Cleaning</h2>
-              <ul class="level_2-details-ul">
+        <div class="level-2-background-div" id="level-2-background-bottom">
+          <div class="level-2-service-div" id="level-2-service-home_exterior_cleaning">
+            <a href="#" title="View Details about Home Exterior Washing" class="action-a level-2-a" id="level-2-service-a-home_exterior_cleaning">View Details about Home Exterior Washing</a>
+            <div class="level-2-details-div" id="level-2-detail-home_exterior_cleaning">
+              <h2 class="level-2-details-h2">Details about Home Exterior Cleaning</h2>
+              <ul class="level-2-details-ul">
                 <li>Nunc lobortis ex vel lacinia suscipit</li>
                 <li>In vel turpis non enim pretium semper</li>
                 <li>Etiam ornare odio ut lacus sodales, sed aliquet odio dignissim</li>
                 <li>Sed feugiat metus et imperdiet vehicula</li>
               </ul>
             </div>
-            <div class="level_2-service-overlay-div" id="level_2-service-overlay-home_exterior_cleaning"></div>
+            <div class="level-2-service-overlay-div" id="level-2-service-overlay-home_exterior_cleaning"></div>
           </div>
-          <div class="level_2-service-div" id="level_2-service-auto_detailing">
-            <a href="#" title="View Details about Auto Detailing" class="action-a level_2-a" id="level_2-service-a-auto_detailing">View Details about Auto Detailing</a>
-            <div class="level_2-details-div" id="level_2-detail-auto_detailing">
-              <h2 class="level_2-details-h2">Details about Auto Detailing</h2>
-              <ul class="level_2-details-ul">
+          <div class="level-2-service-div" id="level-2-service-auto_detailing">
+            <a href="#" title="View Details about Auto Detailing" class="action-a level-2-a" id="level-2-service-a-auto_detailing">View Details about Auto Detailing</a>
+            <div class="level-2-details-div" id="level-2-detail-auto_detailing">
+              <h2 class="level-2-details-h2">Details about Auto Detailing</h2>
+              <ul class="level-2-details-ul">
                 <li>Sed vestibulum purus eu dui hendrerit finibus</li>
                 <li>Morbi tristique leo et neque posuere, ut imperdiet nunc commodo</li>
                 <li>Nunc nec diam ut erat scelerisque facilisis ac quis diam</li>
               </ul>
             </div>
-            <div class="level_2-service-overlay-div" id="level_2-service-overlay-deck_cleaning"></div>
+            <div class="level-2-service-overlay-div" id="level-2-service-overlay-deck_cleaning"></div>
           </div>
-          <div class="level_2-service-div" id="level_2-service-deck_cleaning">
-            <a href="#" title="View Details about Deck Cleaning" class="action-a level_2-a" id="level_2-service-a-deck_cleaning">View Details about Deck Cleaning</a>
-            <div class="level_2-details-div" id="level_2-detail-deck_cleaning">
-              <h2 class="level_2-details-h2">Details about Deck Cleaning</h2>
-              <ul class="level_2-details-ul">
+          <div class="level-2-service-div" id="level-2-service-deck_cleaning">
+            <a href="#" title="View Details about Deck Cleaning" class="action-a level-2-a" id="level-2-service-a-deck_cleaning">View Details about Deck Cleaning</a>
+            <div class="level-2-details-div" id="level-2-detail-deck_cleaning">
+              <h2 class="level-2-details-h2">Details about Deck Cleaning</h2>
+              <ul class="level-2-details-ul">
                 <li>Nunc lobortis ex vel lacinia suscipit</li>
                 <li>In vel turpis non enim pretium semper</li>
                 <li>Etiam ornare odio ut lacus sodales, sed aliquet odio dignissim</li>
                 <li>Sed feugiat metus et imperdiet vehicula</li>
               </ul>
             </div>
-            <div class="level_2-service-overlay-div" id="level_2-service-overlay-deck_cleaning"></div>
+            <div class="level-2-service-overlay-div" id="level-2-service-overlay-deck_cleaning"></div>
           </div>
-          
+        </div>
+      </section>
+      <section class="homepage-section" id="homepage-section-3">
+        <a id="testimonials"></a>
+        <div class="level-3-container-div" id="level-3-container-auto">
+          <div class="level-3-img-container-div">
+            <img src="/assets/img/homepage/desktop/level-3-auto.jpg" alt="Our mobile wash will leave your car gleaming" class="level-3-img" id="level-3-img-auto">
+          </div>
+          <div class="level-3-copy-container-div">
+            <p class="content-p">
+              Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+              Curabitur aliquam quam ut euismod lacinia. Vestibulum condimentum varius blandit. 
+              Praesent maximus ultrices risus, nec pellentesque orci. 
+              <span class="level-3-customer-span">&ndash; El Debarge</span>
+            </p>
+          </div>
+        </div>
+        <div class="level-3-container-div" id="level-3-container-home">
+          <div class="level-3-copy-container-div">
+            <p class="content-p">
+              Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+              Curabitur aliquam quam ut euismod lacinia. Vestibulum condimentum varius blandit. 
+              Praesent maximus ultrices risus, nec pellentesque orci.  
+              <span class="level-3-customer-span">&ndash; Rico Suave</span>             
+            </p>
+          </div>
+          <div class="level-3-img-container-div">
+            <img src="/assets/img/homepage/desktop/level-3-home.jpg" alt="Restore your home by using our service" class="level-3-img" id="level-3-img-home">
+          </div>            
+        </div>   
+        <div class="level-3-container-div" id="level-3-container-deck">
+          <div class="level-3-img-container-div">
+            <img src="/assets/img/homepage/desktop/level-3-deck.jpg" alt="Staining your deck can add value to your home " class="level-3-img" id="level-3-img-auto">
+          </div>
+          <div class="level-3-copy-container-div">
+            <p class="content-p">
+              Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+              Curabitur aliquam quam ut euismod lacinia. Vestibulum condimentum varius blandit. 
+              Praesent maximus ultrices risus, nec pellentesque orci.
+              <span class="level-3-customer-span">&ndash; Al B. Sure</span>
+            </p>
+          </div>
         </div>
       </section> 
-      <section class="homepage-section" id="homepage-section-3">
+      <section class="homepage-section" id="homepage-section-4">
         <a id="about-dallas-mobile-wash"></a>
-        <div id="level_3-content-container">
+        <div id="level-4-content-container">
           <p class="content-p">
             Dallas Mobile Wash is owned and operated by The Dallas Group, LLC.
           </p>
@@ -214,21 +258,21 @@
           </p>
         </div>
       </section>
-      <section class="homepage-section" id="homepage-section-4">
+      <section class="homepage-section" id="homepage-section-5">
         <a id="service-area"></a>
-        <div id="level_4-content-container">
+        <div id="level-5-content-container">
           <h2>Service Area</h2>
-          <ul id="level_4-service_area_list">
+          <ul id="level-5-service_area_list">
             <li>City of St. Louis</li>
             <li>St. Louis County</li>
           </ul>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199411.7393287934!2d-90.38354516841609!3d38.65328504875301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4a9faed8ef9%3A0xbe39eaca22bbe05b!2sSt.%20Louis%2C%20MO!5e0!3m2!1sen!2sus!4v1598404539787!5m2!1sen!2sus" width="577" height="433" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="level_4-map"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199411.7393287934!2d-90.38354516841609!3d38.65328504875301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4a9faed8ef9%3A0xbe39eaca22bbe05b!2sSt.%20Louis%2C%20MO!5e0!3m2!1sen!2sus!4v1598404539787!5m2!1sen!2sus" width="577" height="433" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="level-5-map"></iframe>
       </section>
-      <section class="homepage-section" id="homepage-section-5">
+      <section class="homepage-section" id="homepage-section-6">
         <a id="info-and-pricing"></a>
-        <div id="level_5-content-container">
-          <div id="level_5-content-background">
+        <div id="level-6-content-container">
+          <div id="level-6-content-background">
             <p class="content-p">
               Please take a moment look over the descriptions of our services. 
               If you are interested in any of these services, please click 'Make an Appointment'.
@@ -244,13 +288,13 @@
             </p>
           </div>
         </div>
-        <div id="level_5-services-container">
+        <div id="level-6-services-container">
           <h2>Info &amp; Pricing</h2>
           <p class="content-desc-p">The links below will load information about our cleaning services.</p>
-          <ul id="level_5-services-list">
+          <ul id="level-6-services-list">
             <li>
-              <a href="javascript:showLevel5Content('auto_detailing');" title="Auto Detailing" class="level_5-services-list-a" id="level_5-service-a-auto_detailing">Auto Detailing</a>
-              <div class="level_5-service-div" id="level_5-service-auto_detailing">
+              <a href="javascript:showLevel6Content('auto_detailing');" title="Auto Detailing" class="level-6-services-list-a" id="level-6-service-a-auto_detailing">Auto Detailing</a>
+              <div class="level-6-service-div" id="level-6-service-auto_detailing">
                 <p>
                   Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
                   himenaeos. Nullam scelerisque ut arcu viverra porta. Aenean at condimentum libero. 
@@ -261,8 +305,8 @@
               </div>
             </li>
             <li>
-              <a href="javascript:showLevel5Content('home_exterior_cleaning');" title="Home Exterior Cleaning" class="level_5-services-list-a" id="level_5-service-a-home_exterior_cleaning">Home Exterior Cleaning</a>
-              <div class="level_5-service-div" id="level_5-service-home_exterior_cleaning">
+              <a href="javascript:showLevel5Content('home_exterior_cleaning');" title="Home Exterior Cleaning" class="level-6-services-list-a" id="level-6-service-a-home_exterior_cleaning">Home Exterior Cleaning</a>
+              <div class="level-6-service-div" id="level-6-service-home_exterior_cleaning">
                 <p>
                   Donec et vehicula diam. Fusce eget lorem ut nibh ullamcorper dapibus. Ut sagittis ut 
                   mauris placerat bibendum. Aliquam ut arcu mauris. Mauris ornare ac est et interdum. 
@@ -272,8 +316,8 @@
               </div>
             </li>
             <li>
-              <a href="javascript:showLevel5Content('deck_cleaning');" title="Deck Cleaning" class="level_5-services-list-a" id="level_5-service-a-deck_cleaning">Deck Cleaning</a>
-              <div class="level_5-service-div" id="level_5-service-deck_cleaning">
+              <a href="javascript:showLevel5Content('deck_cleaning');" title="Deck Cleaning" class="level-6-services-list-a" id="level-6-service-a-deck_cleaning">Deck Cleaning</a>
+              <div class="level-6-service-div" id="level-6-service-deck_cleaning">
                 <p>
                   Vestibulum condimentum nisl purus, et varius nisl blandit vitae. Aliquam libero massa, 
                   rutrum ac augue nec, rhoncus ultricies turpis. Etiam egestas bibendum felis at tempus.
@@ -282,8 +326,8 @@
               </div>
             </li>
             <li>
-              <a href="javascript:showLevel5Content('deck_staining');" title="Deck Staining" class="level_5-services-list-a" id="level_5-service-a-deck_staining">Deck Staining</a>
-              <div class="level_5-service-div" id="level_5-service-deck_staining">
+              <a href="javascript:showLevel5Content('deck_staining');" title="Deck Staining" class="level-6-services-list-a" id="level-6-service-a-deck_staining">Deck Staining</a>
+              <div class="level-6-service-div" id="level-6-service-deck_staining">
                 <p>
                   Mauris eu urna vitae tortor gravida efficitur ut quis augue. Suspendisse iaculis molestie 
                   ex, gravida bibendum ex. Pellentesque nec tortor sit amet tellus semper dapibus eget non 
@@ -295,13 +339,13 @@
           </ul>
         </div>
       </section>
-      <section class="homepage-section" id="homepage-section-6">
+      <section class="homepage-section" id="homepage-section-7">
         <a id="talk-to-dallas"></a>
-        <div id="level_6-img-container">
-          <img src="assets/img/homepage/desktop/level_6.png" alt="Dallas Mobile Wash would be glad to visit you wherever you are to detail your car to your satisfaction." id="level_6-img">
+        <div id="level-7-img-container">
+          <img src="assets/img/homepage/desktop/level-7.png" alt="Dallas Mobile Wash would be glad to visit you wherever you are to detail your car to your satisfaction." id="level-7-img">
         </div>
-        <div id="level_6-content-container">
-          <div id="level_6-content-background">
+        <div id="level-7-content-container">
+          <div id="level-7-content-background">
             <p class="content-p">
               Thanks for stopping by. 
             </p>
@@ -338,6 +382,7 @@
         <ul id="footer-links">
           <li><a href="#mobile-wash-appeal" title="Mobile Wash Appeal" class="footer-links-a" id="footer-link-mwa">Mobile Wash Appeal</a></li>
           <li><a href="#services" title="Services" class="footer-links-a" id="footer-link-services">Services</a></li>
+          <li><a href="#testimonials" title="Testimonials" class="footer-links-a" id="footer-link-test">Testimonials</a></li>
           <li><a href="#about-dallas-mobile-wash" title="About Dallas Mobile Wash" class="footer-links-a" id="footer-link-admw">About Dallas Mobile Wash</a></li>
           <li><a href="#service-area" title="Service Area" class="footer-links-a" id="footer-link-sa">Service Area</a></li>
           <li><a href="#info-and-pricing" title="Info &amp; Pricing" class="footer-links-a" id="footer-link-iap">Info &amp; Pricing</a></li>
