@@ -427,7 +427,7 @@ header {
   position: absolute;
   top: 76px;
   left: 76px;
-  z-index: 3;
+  z-index: 300;
 }
 header #header-contact_info_container-aside {
   width: 255px;
@@ -469,6 +469,11 @@ header #header-contact_info_container-aside .contact_info-content-a {
 #top-nav-logo-a,
 #header-contact_info_container-aside {
   display: inline-flex;
+}
+
+#top-desktop-nav-icon {
+  width: 36px;
+  height: 36px;
 }
 
 #top-nav-ul {
@@ -599,6 +604,10 @@ header #header-contact_info_container-aside .contact_info-content-a {
   z-index: 200;
 }
 
+#level-2-service-deck_staining {
+  width: 33.4%;
+}
+
 .level-2-details-div {
   width: 80%;
   margin: 50px auto 0 auto;
@@ -621,7 +630,7 @@ header #header-contact_info_container-aside .contact_info-content-a {
   background-image: url("/assets/img/homepage/desktop/level-2-auto.jpg");
 }
 
-#level-2-service-deck_cleaning {
+#level-2-service-deck_staining {
   background-image: url("/assets/img/homepage/desktop/level-2-deck.jpg");
 }
 
@@ -777,6 +786,10 @@ header #header-contact_info_container-aside .contact_info-content-a {
 
 #level-7-img-container {
   width: 45.6%;
+}
+
+#level-7-content-container {
+  width: 54%;
 }
 
 #level-7-img {
@@ -1025,10 +1038,6 @@ ul li,
   /* --- LEVEL #2 --- */
   #homepage-section-2 {
     height: 437px;
-  }
-
-  #level-2-p {
-    top: 21%;
   }
 
   #level-2-icons {
@@ -1299,11 +1308,12 @@ ul li,
     height: 355px;
   }
 
-  #level-2-p,
-#level-2-icons {
-    top: 13%;
-  }
+  /* 
 
+  #level-2-p, 
+  #level-2-icons {
+    top: 13%;
+  } */
   .level-2-service-overlay-div {
     height: 13%;
   }
@@ -1413,6 +1423,14 @@ ul li {
     border-top: 3px solid #98a0a5;
   }
 
+  #level-3-container-home .level-3-copy-container-div {
+    border-right: none;
+  }
+
+  #level-3-container-deck {
+    border-top: 1px solid #2b2c30;
+  }
+
   /****** SHADOWS ******/
   #level-5-map,
 #level-6-services-container,
@@ -1501,7 +1519,6 @@ ul li {
   .mobile-contactinfo-item-div {
     margin-bottom: 26px;
     position: relative;
-    bottom: -135px;
   }
 
   .mobile-contactinfo-item-span {
@@ -1561,7 +1578,7 @@ ul li {
 
   #level-1-p {
     width: 100%;
-    height: 71.5%;
+    height: fit-content;
     margin-bottom: 0;
     padding: 20px 26px;
     top: 0;
@@ -1628,6 +1645,23 @@ ul li {
     width: 100%;
     height: 187px;
     top: 0;
+  }
+
+  #level-2-service-deck_staining {
+    width: 100%;
+  }
+
+  /* --- LEVEL #3 --- */
+  .level-3-container-div {
+    display: block;
+  }
+  .level-3-container-div .content-p {
+    width: 100%;
+    padding: 20px 26px;
+  }
+
+  .level-3-img-container-div {
+    width: 100%;
   }
 
   /* --- LEVEL #4 --- */
@@ -1723,6 +1757,10 @@ ul li {
   #level-7-img-container {
     width: 100%;
     height: 290px;
+  }
+
+  #level-7-content-container {
+    width: 100%;
   }
 
   #level-7-img {
@@ -1853,9 +1891,20 @@ ul li {
   #input-contact-message {
     height: 145px;
   }
+
+  #mobile-contactinfo-container {
+    position: relative;
+    top: 64px;
+  }
 }
 /* ------ APPLE iPHONE ------- */
 @media screen and (width: 375px) {
+  /****** MOBILE NAVIGATION ******/
+  #mobile-contactinfo-container {
+    position: relative;
+    top: 101px;
+  }
+
   /****** COPY ******/
   /* --- LEVEL #1 --- */
   #homepage-section-1 {
@@ -1875,15 +1924,17 @@ ul li {
 /* ------ APPLE iPHONE ------- */
 @media screen and (width: 375px) and (height: 812px) {
   /****** MOBILE NAVIGATION ******/
-  .mobile-contactinfo-item-div {
-    bottom: -307px;
+  #mobile-contactinfo-container {
+    position: relative;
+    top: 160px;
   }
 }
 /* ------ APPLE iPHONE + ------- */
 @media screen and (width: 414px) {
   /****** MOBILE NAVIGATION ******/
-  .mobile-contactinfo-item-div {
-    bottom: -231px;
+  #mobile-contactinfo-container {
+    position: relative;
+    top: 237px;
   }
 
   /****** COPY ******/

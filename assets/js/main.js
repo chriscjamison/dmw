@@ -29,7 +29,7 @@ $(details_buttons_selector).mouseover(
 
     // The CSS selector of the specific button the visitor is interacting 
     // with is passed on.
-    block_selector_value = string_contents_Array[3];
+    block_selector_value = string_contents_Array[4];
 
     // The visibility of the button and the content the visitor is 
     // interacting with is changed by the use of the function, 'showLevel2Content'.
@@ -60,7 +60,7 @@ $(details_buttons_selector).click(
 
     // The CSS selector of the specific button the visitor is interacting 
     // with is passed on.
-    block_selector_value = string_contents_Array[3];
+    block_selector_value = string_contents_Array[4];
 
     // The visibility of the button and the content the visitor is 
     // interacting with is changed by the use of the function, 'showLevel2Content'.
@@ -98,7 +98,7 @@ $(content_selector).mouseleave(
 
     // The CSS selector of the specific button the visitor is interacting 
     // with is passed on.
-    block_selector_value = string_contents_Array[2];
+    block_selector_value = string_contents_Array[3];
 
     // The visibility of the button and the content the visitor is 
     // interacting with is changed by the use of the function, 'showLevel2Buttons'.
@@ -217,8 +217,22 @@ $(links_selector).click(
 
 
 
+$(window).resize(
+  function () {
+    adjustSectionHeight();
+  }
+);
+
+
+
 $(document).ready( 
   function () {
+    setTimeout(
+      function () {
+        adjustSectionHeight();
+      }, 250
+    );
+
     var url_string = window.location.href;
 
     var search_string_Array = [
@@ -1072,3 +1086,155 @@ function toggleDesktopMenu() {
 } // END of displayMobileMenu 
 
 
+
+function adjustSectionHeight()  {
+  /* @params ********************************************************
+     Name:      adjustSectionHeight
+
+     Purpose:   Matches the height of a given section to its content.
+  
+  **************************************************************** */
+
+  // A Number that will hold the width of the browser window 
+  // is initialized.
+  var window_width = $(window).width();
+  
+  // The CSS selector that refers to the <section> that contains 
+  // the content for 'Section #1' is initialized and passed on.
+  var sectionOneSelector = "#homepage-section-1";
+
+  // The height of 'Section #1' is adjusted to match its content.
+  $(sectionOneSelector).height(Math.round(window_width * 0.456));
+
+  // IF statement that resizes 'Section #1' to match the content to 
+  // a browser for a smartphone, if necessary.
+  if (window_width <= 414)  {
+    // The CSS selector that refers to the <p> that contains the 
+    // copy within 'Section #1' is iniitalized.
+    var paragraphSelector = "#level-1-p";
+
+    // The height of the <p> that contains the copy within 'Section #1' 
+    // is passed on.
+    var paragraphHeight = Math.round($(paragraphSelector).height() + 40);
+
+    // The height of 'Section #1' is adjusted to match its content.
+    $(sectionOneSelector).height(paragraphHeight);
+  }
+
+  // A Number that will hold the height of the content that 
+  // contains the 'details' about the services is initialized.
+  var detailsHeight = Math.round(Math.round(window_width / 3) * 0.518);
+
+  // The CSS selectors that refer to the content that contains 
+  // the 'details' for each section is intialized.
+  var detailsSelector = "#level-2-background-bottom, .level-2-service-div, .level-2-service-overlay-div";
+
+  // The height of the <div>'s that contain the details' 
+  // of the services offered are adjusted.
+  $(detailsSelector).height(Math.round(detailsHeight));
+
+  // A String that will hold the CSS selector that refers 
+  // to the <div> that contains the description of the services 
+  // offered is initialized.
+  var descriptionSelector = "#level-2-background-top";
+
+  // A Number that will hold the height of the <div> that contains 
+  // the description of the services offered is initialized.
+  var descriptionHeight = Math.round($(descriptionSelector).height() - 10);
+
+  // IF statement that resizes 'Section #2' to match the content to 
+  // a browser for a smartphone, if necessary.
+  if (window_width <= 414)  {
+    // A Number that will hold the height of the content that 
+    // contains the 'details' about the services is initialized.
+    var detailsHeight = Math.round(window_width * 0.518);
+
+    // The CSS selectors that refer to the content that contains 
+    // the 'details' for each section is passed on.
+    var detailsSelector = ".level-2-service-div, .level-2-service-overlay-div";
+
+    // The height of the <div>'s the contain the details of the services 
+    // offered are adjusted.
+    $(detailsSelector).height(detailsHeight);
+
+    // The CSS selector that refers to the copy within 'Section #2'
+    // is passed on.
+    var levelTwoCopySelector = "#level-2-content-container";
+
+    // The CSS selector that refers to the icons within 'Section #2' 
+    // is passed on.
+    var levelTwoIconsSelector = "#level-2-icons-container";
+
+    // The heights of the <div>'s the contain the copy and icons 
+    // within 'Section #2' are passed on.
+    var levelTwoCopyIconsHeight = Math.round($(levelTwoCopySelector).height() + $(levelTwoIconsSelector).height());
+
+    // The CSS selector that refers to the <div> that contains the copy 
+    // and icons of 'Section #2' is passed on.
+    var sectionTwoTopSelector = "#level-2-background-top";
+
+    // The height of the <div> that contains the copy and icons of 'Section #2' 
+    // is adjusted.
+    $(sectionTwoTopSelector).height(levelTwoCopyIconsHeight);
+
+    // The CSS selector that refers to the <div> that contains the blocks 
+    // of details of the services offered is passed on.
+    var sectionTwoBottomSelector = "#level-2-background-bottom";
+
+    // The value of detailsHeight is changed to reflect the height of the 
+    // stack of blocks that contain details about the services offered.
+    detailsHeight = Math.round(detailsHeight * 3);
+
+    // The height of the <div> that contains the blocks of content 
+    // of details of the services offered is intialized.
+    $(sectionTwoBottomSelector).height(detailsHeight);
+  }
+
+  // A String that will hold the CSS selector that refers 
+  // to the <div> that contains the content of 'Section #2' 
+  // is initialized.
+  var sectionTwoSelector = "#homepage-section-2";
+
+  // The height of the <div> that contains the content of 
+  // 'Section #2' is adjusted.
+  $(sectionTwoSelector).height(Math.round(detailsHeight + descriptionHeight));
+
+  // The CSS selector that refers to the <div>'s that contains 
+  // testimonials is initialized. content that contains 
+  var testimonialSelector = ".level-3-container-div";
+
+  // The height of the <div>'s that contain testimonials 
+  // is passed on.
+  var testimonialHeight = Math.round($(testimonialSelector).height()) * 3 - 10;
+
+  // A String that will hold the CSS selector that refers 
+  // to the <div> that contains the content of 'Section #3' 
+  // is initialized.
+  var sectionThreeSelector = "#homepage-section-3";
+
+  // The height of the <div> that contains the content of 
+  // 'Section #3' is adjusted.
+  $(sectionThreeSelector).height(testimonialHeight);
+
+  // IF statement that resizes 'Section #4' to match the content to 
+  // a browser for a desktop computer, if necessary.
+  if (window_width > 414)  {
+    // The CSS selector that refers to the <section> that contains 
+    // the content for 'Section #4' is initialized and passed on.
+    var sectionFourSelector = "#homepage-section-4";
+
+    // The height of 'Section #1' is adjusted to match its content.
+    $(sectionFourSelector).height(Math.round(window_width * 0.456));
+  }
+
+  // IF statement that resizes 'Section #5' to match the content to 
+  // a browser for a desktop computer, if necessary.
+  if (window_width > 414)  {
+    // The CSS selector that refers to the <section> that contains 
+    // the content for 'Section #5' is initialized and passed on.
+    var sectionFiveSelector = "#homepage-section-5";
+
+    // The height of 'Section #1' is adjusted to match its content.
+    $(sectionFiveSelector).height(Math.round(window_width * 0.517));
+  }
+} // END of adjustSectionHeight
